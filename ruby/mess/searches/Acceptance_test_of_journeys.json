@@ -1,0 +1,236 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "nextPage": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs Acceptance test of journeys",
+        "totalResults": "15",
+        "searchTerms": "site:thoughtworks.com/blogs Acceptance test of journeys",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ],
+    "request": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs Acceptance test of journeys",
+        "totalResults": "15",
+        "searchTerms": "site:thoughtworks.com/blogs Acceptance test of journeys",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ]
+  },
+  "context": {
+    "title": "Custom Search"
+  },
+  "searchInformation": {
+    "searchTime": 0.045804,
+    "formattedSearchTime": "0.05",
+    "totalResults": "15",
+    "formattedTotalResults": "15"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Brazil | www.thoughtworks.com",
+      "htmlTitle": "Brazil | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/brazil",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "So, instead of writing tests to decide how we should write our code, we started   writing ... like Selenium, has encouraged widespread use of acceptance testing   at the browser level. .... We only automated high level test journeys at the UI level.",
+      "htmlSnippet": "So, instead of writing tests to decide how we should write our code, we started <br>  writing <b>...</b> like Selenium, has encouraged widespread use of <b>acceptance testing</b> <br>  at the browser level. <b>....</b> We only automated high level test <b>journeys</b> at the UI level.",
+      "cacheId": "y9fHklPB1dAJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/brazil",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/brazil",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://3.bp.blogspot.com/-UQhPrao2JDY/T2iiruNJhmI/AAAAAAAAAIg/HhFtruxni_8/s1600/Scrum.org-PIF-PSM-001.2012a.JPG"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "259",
+            "height": "194",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcTSEUbrkxxoPN4p7j-P_RIZRiGpTxE-SuSaNyOaaAckBhSSCzlUF5U6cwSe"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "To test this idea, let's look at a second burn up chart, perhaps for a team that is .....   the United Kingdom for my clients with travel for conferences to many more.",
+      "htmlSnippet": "To <b>test</b> this idea, let&#39;s look at a second burn up chart, perhaps for a team that is <b>.....</b> <br>  the United Kingdom for my clients with <b>travel</b> for conferences to many more.",
+      "cacheId": "IgGQxki5c7EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "It also requires a lot more manual testing (more on than later) and a fair bit of trial   .... personas + customer needs; Define holistic customer journeys (case study) ...",
+      "htmlSnippet": "It also requires a lot more manual <b>testing</b> (more on than later) and a fair bit of trial <br>  <b>....</b> personas + customer needs; Define holistic customer <b>journeys</b> (case study) <b>...</b>",
+      "cacheId": "jUe48RcYBZYJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Customer experience | www.thoughtworks.com",
+      "htmlTitle": "Customer experience | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/customer-experience",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Once the prototype was working in a live environment they tested it with users .....   Don Norman's follow up book which shows the journey he went on as a designer,   ..... you improve your proposal and making it much more likely to be accepted!",
+      "htmlSnippet": "Once the prototype was working in a live environment they <b>tested</b> it with users <b>.....</b> <br>  Don Norman&#39;s follow up book which shows the <b>journey</b> he went on as a designer, <br>  <b>.....</b> you improve your proposal and making it much more likely to be <b>accepted</b>!",
+      "cacheId": "9bagROIJDV8J",
+      "formattedUrl": "www.thoughtworks.com/blogs/customer-experience",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/customer-experience",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://4.bp.blogspot.com/-DxjWW0Kaw10/T1krWfKh3CI/AAAAAAAAGZQ/veztsWF0cjk/s1600/panic+button+team.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "244",
+            "height": "163",
+            "src": "https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQYQrmhSTzKHGE_JjqY-WB0R099mP9wryP1cKyVu0c9ToKAbDchIlUU3ymD"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=9",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Feb 25, 2012 ... I would like to pen down my ThoughtWorks journey so far. ...... Test Approach:   Acceptance test for the exhaustion capacity of the engine ...",
+      "htmlSnippet": "Feb 25, 2012 <b>...</b> I would like to pen down my ThoughtWorks <b>journey</b> so far. <b>......</b> Test Approach: <br>  <b>Acceptance test</b> for the exhaustion capacity of the engine <b>...</b>",
+      "cacheId": "cJ09L939BKMJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=9",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=9",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://www.iamhukai.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-24-at-2.39.38-PM.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "293",
+            "height": "172",
+            "src": "https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcQPjIvX9ZvcooSrT_jz8KDdPct4w5HZPY5g55FgO4BQvCCDM6LVYdZtbqti"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=37",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "We are going to need to change a whole bunch of tests, because they all rely on   this value to be calculated ...... It is a personal journey, and it goes beyond work.",
+      "htmlSnippet": "We are going to need to change a whole bunch of <b>tests</b>, because they all rely on <br>  this value to be calculated <b>......</b> It is a personal <b>journey</b>, and it goes beyond work.",
+      "cacheId": "rtiQ-im_M6oJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=37",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=37"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=6",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "To test this you are going to need to hook your iPhone up to your dev   environment ... complimentary skills, trust, common goals, acceptance of each   other as we are, etc) to ... So I made my journey to EventMachine armed with EM::  Synchrony.",
+      "htmlSnippet": "To <b>test</b> this you are going to need to hook your iPhone up to your dev <br>  environment <b>...</b> complimentary skills, trust, common goals, <b>acceptance</b> of each <br>  other as we are, etc) to <b>...</b> So I made my <b>journey</b> to EventMachine armed with EM::<br>  Synchrony.",
+      "cacheId": "MvppFoSK29oJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=6",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=6",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://agileindia.org/uploads/images/ConferenceBags.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "180",
+            "height": "280",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcQAQgSAI3FaBd2jUiH8iW1RYbOSshR9VgbO79NM7RAqI27FpCyrVhHmT-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=35",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "The journey started in data; a significant minority of customers were accessing .....   I showed that acceptance tests could be refactored so that step definitions are ...",
+      "htmlSnippet": "The <b>journey</b> started in data; a significant minority of customers were accessing <b>.....</b> <br>  I showed that <b>acceptance tests</b> could be refactored so that step definitions are <b>...</b>",
+      "cacheId": "mExcsuo4oL4J",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=35",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=35"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Blogs | www.thoughtworks.com",
+      "htmlTitle": "Blogs | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/all",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Stress Testing Results ... What the cromulent testers think: ..... personas +   customer needs; Define holistic customer journeys (case study); Emphasise the   value ...",
+      "htmlSnippet": "Stress <b>Testing</b> Results <b>...</b> What the cromulent <b>testers</b> think: <b>.....</b> personas + <br>  customer needs; Define holistic customer <b>journeys</b> (case study); Emphasise the <br>  value <b>...</b>",
+      "cacheId": "hhiXM3bsYb0J",
+      "formattedUrl": "www.thoughtworks.com/blogs/all",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/all"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=5",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "2012年3月11日 ... Code is integrated and tested after a few hours-a day of ...... So on 21st Feb - a   day I'd been waiting for months, we set out on our journey.",
+      "htmlSnippet": "2012年3月11日 <b>...</b> Code is integrated and <b>tested</b> after a few hours-a day of <b>......</b> So on 21st Feb - a <br>  day I&#39;d been waiting for months, we set out on our <b>journey</b>.",
+      "cacheId": "XUP-x12U6sYJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=5",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=5",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://distilleryimage8.s3.amazonaws.com/64cd497c5c4b11e180c9123138016265_7.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "225",
+            "height": "225",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcR8vq294sQSWSSIIZasoYG00RgGUY-4_1kypA1ymwpC5bhW6tPUSWY1M6fH"
+          }
+        ]
+      }
+    }
+  ]
+}

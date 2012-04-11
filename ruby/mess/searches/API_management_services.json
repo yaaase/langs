@@ -1,0 +1,222 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "nextPage": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs API management services",
+        "totalResults": "23",
+        "searchTerms": "site:thoughtworks.com/blogs API management services",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ],
+    "request": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs API management services",
+        "totalResults": "23",
+        "searchTerms": "site:thoughtworks.com/blogs API management services",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ]
+  },
+  "context": {
+    "title": "Custom Search"
+  },
+  "searchInformation": {
+    "searchTime": 0.037758,
+    "formattedSearchTime": "0.04",
+    "totalResults": "23",
+    "formattedTotalResults": "23"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=7",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Role/Profile Agile Coach / Trainer Head of Project Management Senior ... CEO   Managing Director Senior Software Developer CEO and MD NDS Services Pay   TV .... As APIs listadas abaixo são em alguns casos baseadas nos conceitos de ...",
+      "htmlSnippet": "Role/Profile Agile Coach / Trainer Head of Project <b>Management</b> Senior <b>...</b> CEO <br>  <b>Managing</b> Director Senior Software Developer CEO and MD NDS <b>Services</b> Pay <br>  TV <b>....</b> As <b>APIs</b> listadas abaixo são em alguns casos baseadas nos conceitos de <b>...</b>",
+      "cacheId": "vLIB8upuf4EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=7",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=7",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://getfile8.posterous.com/getfile/files.posterous.com/temp-2012-01-14/GsrtCpufoggvmzewEmldwoHJqksbveEqrgFmjEgDcyHECIcAaJrAmEbleAen/2009101313080460.jpg.scaled750.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "259",
+            "height": "194",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcR8AIE24TrSGDGciuGGXJNsLTHV1eLjeZQ1asqCBkL4qXZT3YIgSndU7l0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "So, as a program manager, it is vitally important that each individual team's .....   After we'd pulled out a micro service it looked like this: Api after. The choice of ...",
+      "htmlSnippet": "So, as a program <b>manager</b>, it is vitally important that each individual team&#39;s <b>.....</b> <br>  After we&#39;d pulled out a micro <b>service</b> it looked like this: <b>Api</b> after. The choice of <b>...</b>",
+      "cacheId": "IgGQxki5c7EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://seandoran.files.wordpress.com/2012/04/burnupbehind2.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "317",
+            "height": "159",
+            "src": "https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQ-6-hFWDzmdB0PDGE3omgeOKkmQjW5xjZMd_8pukef0A1s-lSmZBGYqcb-"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "https://developer.apple.com/ios/manage/devices/howto.action .... Foursquare,   Weather, and Maps are obvious services that could use this kind information.",
+      "htmlSnippet": "https://developer.apple.com/ios/<b>manage</b>/devices/howto.action <b>....</b> Foursquare, <br>  Weather, and Maps are obvious <b>services</b> that could use this kind information.",
+      "cacheId": "jUe48RcYBZYJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Brazil | www.thoughtworks.com",
+      "htmlTitle": "Brazil | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/brazil?page=2",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Jersey – API Java muito consistente para fazer trabalhos com REST. ... OS X   launchd spawn processes and manage them, you can actually make use of it to ...",
+      "htmlSnippet": "Jersey – <b>API</b> Java muito consistente para fazer trabalhos com REST. <b>...</b> OS X <br>  launchd spawn processes and <b>manage</b> them, you can actually make use of it to <b>...</b>",
+      "cacheId": "Ict9wwWuySoJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/brazil?page=2",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/brazil?page=2"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=1",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Well looking at the 12 operations in the API documentation, I can see:: ..... I think   many requirement management systems have been sold because for the first   time companies .... The fear of a service interruption causes organizational   seizure.",
+      "htmlSnippet": "Well looking at the 12 operations in the <b>API</b> documentation, I can see:: <b>.....</b> I think <br>  many requirement <b>management</b> systems have been sold because for the first <br>  time companies <b>....</b> The fear of a <b>service</b> interruption causes organizational <br>  seizure.",
+      "cacheId": "RYPvnH9Od3cJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=1",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=1",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://1.bp.blogspot.com/-OF3ZCtmiprg/T3H4HIyp3SI/AAAAAAAACJ8/2Rkj_Cv6z6A/s320/technology-radar-brazil-2012.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "256",
+            "height": "156",
+            "src": "https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcTCKnqi_aLuKsR76iVwgRsvVkUOGZsi4o4xQFTpkREGVPHZuoOSad3DLWv4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Studios | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Studios | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/studios",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Feb 29, 2012 ... Stage two, automated API testing, runs MSTest over the test library artifact   produced by the ... Task Management and Collaboration. I use the ...",
+      "htmlSnippet": "Feb 29, 2012 <b>...</b> Stage two, automated <b>API</b> testing, runs MSTest over the test library artifact <br>  produced by the <b>...</b> Task <b>Management</b> and Collaboration. I use the <b>...</b>",
+      "cacheId": "toQlwJfId44J",
+      "formattedUrl": "www.thoughtworks.com/blogs/studios",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/studios"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=2",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "(As a side note, I suspect the actual web service APIs provided by AWS are rarely   used ... in the form of the CLI or library, or via the AWS Management Console.",
+      "htmlSnippet": "(As a side note, I suspect the actual web <b>service APIs</b> provided by AWS are rarely <br>  used <b>...</b> in the form of the CLI or library, or via the AWS <b>Management</b> Console.",
+      "cacheId": "K_t-bojtCkIJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=2",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=2"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Brazil | www.thoughtworks.com",
+      "htmlTitle": "Brazil | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/brazil",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Code and API information .... Javascript layer communicating to server side using   JSON services; Controller and mandatory validator; Domain model, business ...",
+      "htmlSnippet": "Code and <b>API</b> information <b>....</b> Javascript layer communicating to server side using <br>  JSON <b>services</b>; Controller and mandatory validator; Domain model, business <b>...</b>",
+      "cacheId": "y9fHklPB1dAJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/brazil",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/brazil",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://3.bp.blogspot.com/-UQhPrao2JDY/T2iiruNJhmI/AAAAAAAAAIg/HhFtruxni_8/s1600/Scrum.org-PIF-PSM-001.2012a.JPG"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "259",
+            "height": "194",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcTSEUbrkxxoPN4p7j-P_RIZRiGpTxE-SuSaNyOaaAckBhSSCzlUF5U6cwSe"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=37",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "... from doing them ourselves to asking an external service to perform key   calculations for us. ... Here come the managers in a series of crisis meetings. ......   the Android 2.1 platform (also known as revision 7 or API Level 7 in Android   parlance).",
+      "htmlSnippet": "<b>...</b> from doing them ourselves to asking an external <b>service</b> to perform key <br>  calculations for us. <b>...</b> Here come the <b>managers</b> in a series of crisis meetings. <b>......</b> <br>  the Android 2.1 platform (also known as revision 7 or <b>API</b> Level 7 in Android <br>  parlance).",
+      "cacheId": "rtiQ-im_M6oJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=37",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=37"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=2",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "There's two things to check when you need to know if 'Location Services' are   turned on for your application. 1. ..... We had some great discussion on why   managing scope is important, setting expectations, and why I ..... The API is what   it does.",
+      "htmlSnippet": "There&#39;s two things to check when you need to know if &#39;Location <b>Services</b>&#39; are <br>  turned on for your application. 1. <b>.....</b> We had some great discussion on why <br>  <b>managing</b> scope is important, setting expectations, and why I <b>.....</b> The <b>API</b> is what <br>  it does.",
+      "cacheId": "x2z4_LXgEd8J",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=2",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=2"
+    }
+  ]
+}

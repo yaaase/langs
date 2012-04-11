@@ -1,0 +1,253 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs Care about hardware",
+        "totalResults": "9",
+        "searchTerms": "site:thoughtworks.com/blogs Care about hardware",
+        "count": 9,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ]
+  },
+  "context": {
+    "title": "Custom Search"
+  },
+  "searchInformation": {
+    "searchTime": 0.038495,
+    "formattedSearchTime": "0.04",
+    "totalResults": "9",
+    "formattedTotalResults": "9"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=31",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Assuming identical hardware for each process, it is easy to predict how many ....   in terms of design and deployment, is that care has to be taken with timeouts.",
+      "htmlSnippet": "Assuming identical <b>hardware</b> for each process, it is easy to predict how many <b>....</b> <br>  in terms of design and deployment, is that <b>care</b> has to be taken with timeouts.",
+      "cacheId": "Igk4KIQ0i2EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=31",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=31",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://www.iamxiaodao.com/wp-content/uploads/2011/11/jenkins-dashboard.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "250",
+            "height": "202",
+            "src": "https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcT_WzxGXaen2j3HEkDcCq5cUZiWSeDHKjnW9xZor5l34vqNHcY6WJaRps8Y"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Rapid prototyping libraries were created to bridge this, taking care of much of the   boiler plate code necessary to put a application online, like Rails. Moreover ...",
+      "htmlSnippet": "Rapid prototyping libraries were created to bridge this, taking <b>care</b> of much of the <br>  boiler plate code necessary to put a application online, like Rails. Moreover <b>...</b>",
+      "cacheId": "IgGQxki5c7EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://seandoran.files.wordpress.com/2012/04/burnupbehind2.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "317",
+            "height": "159",
+            "src": "https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQ-6-hFWDzmdB0PDGE3omgeOKkmQjW5xjZMd_8pukef0A1s-lSmZBGYqcb-"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=4",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Lastly this is long so skip to the bit you care about or come along and chat at ....   on Ubuntu, 1 minute 30 on windows (same hardware), CI was 3 mins 30 ish.",
+      "htmlSnippet": "Lastly this is long so skip to the bit you <b>care</b> about or come along and chat at <b>....</b> <br>  on Ubuntu, 1 minute 30 on windows (same <b>hardware</b>), CI was 3 mins 30 ish.",
+      "cacheId": "w3axy-q42coJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=4",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=4",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://agilewarrior.files.wordpress.com/2012/02/new-target.png?w=500"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "290",
+            "height": "174",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcQ55RRyZyMGQXUTL9sFBEE_6lHL2V8YgeSRM_mtCq4PixMXM7uNLuAv0GU"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=34",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Scales as you add hardware. ..... The main ones is that it takes care of   dependencies between modules, and loads ... So RequireJS takes care of all this   loading.",
+      "htmlSnippet": "Scales as you add <b>hardware</b>. <b>.....</b> The main ones is that it takes <b>care</b> of <br>  dependencies between modules, and loads <b>...</b> So RequireJS takes <b>care</b> of all this <br>  loading.",
+      "cacheId": "lSonXU691DsJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=34",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=34",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://martinfowler.com/bliki/images/goto2011/aarhus.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "275",
+            "height": "183",
+            "src": "https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcRIZ665dlQsXxvmJiFX25TKhhnVA-kMdRAuJfVC5rnQ_ttNuTgteRVt4nen"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Continuous Delivery | www.thoughtworks.com",
+      "htmlTitle": "Continuous Delivery | www.thoughtworks.com",
+      "link": "http://continuous-delivery.thoughtworks.com/blogs",
+      "displayLink": "continuous-delivery.thoughtworks.com",
+      "snippet": "Feb 16, 2012... Control-Shift arrows, but we don't care about those at the moment. ..... without   having to wait days or weeks for hardware to be provisioned.",
+      "htmlSnippet": "Feb 16, 2012<b>...</b> Control-Shift arrows, but we don&#39;t <b>care</b> about those at the moment. <b>.....</b> without <br>  having to wait days or weeks for <b>hardware</b> to be provisioned.",
+      "cacheId": "802xE9JA3tUJ",
+      "formattedUrl": "continuous-delivery.thoughtworks.com/blogs",
+      "htmlFormattedUrl": "continuous-delivery.thoughtworks.com/blogs",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://kief.com/images/waterfall.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "183",
+            "height": "275",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcSPbeTA_yh1Vjz7jA1BcuVT0HLZsgZwh5RbT4I_PivPk5OTljDEyx9Y1ns"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=2",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Does your hardware support geolocation if you're trying to use that in your .....   Median family income is increasing at a linear pace, but cost of medical care and ...",
+      "htmlSnippet": "Does your <b>hardware</b> support geolocation if you&#39;re trying to use that in your <b>.....</b> <br>  Median family income is increasing at a linear pace, but cost of medical <b>care</b> and <b>...</b>",
+      "cacheId": "K_t-bojtCkIJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=2",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=2"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=5",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "2012年3月11日 ... For more than eight servers, use a hardware load balancer. Enable .... Pretty   much every company says they care about their employees.",
+      "htmlSnippet": "2012年3月11日 <b>...</b> For more than eight servers, use a <b>hardware</b> load balancer. Enable <b>....</b> Pretty <br>  much every company says they <b>care</b> about their employees.",
+      "cacheId": "XUP-x12U6sYJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=5",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=5",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://distilleryimage8.s3.amazonaws.com/64cd497c5c4b11e180c9123138016265_7.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "225",
+            "height": "225",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcR8vq294sQSWSSIIZasoYG00RgGUY-4_1kypA1ymwpC5bhW6tPUSWY1M6fH"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=3",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Furthermore, given AWS is based on commodity hardware which is literally ......   for an app that has duplicate IDs, so I don't partocularly care whether, for testing, ...",
+      "htmlSnippet": "Furthermore, given AWS is based on commodity <b>hardware</b> which is literally <b>......</b> <br>  for an app that has duplicate IDs, so I don&#39;t partocularly <b>care</b> whether, for testing, <b>...</b>",
+      "cacheId": "iuziDuUdRWMJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=3",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=3",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://3.bp.blogspot.com/-UQhPrao2JDY/T2iiruNJhmI/AAAAAAAAAIg/HhFtruxni_8/s1600/Scrum.org-PIF-PSM-001.2012a.JPG"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "259",
+            "height": "194",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcTSEUbrkxxoPN4p7j-P_RIZRiGpTxE-SuSaNyOaaAckBhSSCzlUF5U6cwSe"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Customer experience | www.thoughtworks.com",
+      "htmlTitle": "Customer experience | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/customer-experience",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "... to help design the hardware and the software for a new cable TVproduct. ......   By saying “no dogs” are you saying we care more about our carpets than our ...",
+      "htmlSnippet": "<b>...</b> to help design the <b>hardware</b> and the software for a new cable TVproduct. <b>......</b> <br>  By saying “no dogs” are you saying we <b>care</b> more about our carpets than our <b>...</b>",
+      "cacheId": "9bagROIJDV8J",
+      "formattedUrl": "www.thoughtworks.com/blogs/customer-experience",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/customer-experience",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://4.bp.blogspot.com/-DxjWW0Kaw10/T1krWfKh3CI/AAAAAAAAGZQ/veztsWF0cjk/s1600/panic+button+team.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "244",
+            "height": "163",
+            "src": "https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQYQrmhSTzKHGE_JjqY-WB0R099mP9wryP1cKyVu0c9ToKAbDchIlUU3ymD"
+          }
+        ]
+      }
+    }
+  ]
+}

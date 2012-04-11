@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: org.scalatest:scalatest_2.9.0:1.7.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.9.0/1.7.1/scalatest_2.9.0-1.7.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/scalatest-1.7.1/scalatest-1.7.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/scalatest-1.7.1/scalatest-1.7.1-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.9.0/1.7.1/scalatest_2.9.0-1.7.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.9.0/1.7.1/scalatest_2.9.0-1.7.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,292 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "nextPage": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs Care about languages",
+        "totalResults": "17",
+        "searchTerms": "site:thoughtworks.com/blogs Care about languages",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ],
+    "request": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs Care about languages",
+        "totalResults": "17",
+        "searchTerms": "site:thoughtworks.com/blogs Care about languages",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ]
+  },
+  "context": {
+    "title": "Custom Search"
+  },
+  "searchInformation": {
+    "searchTime": 0.040036,
+    "formattedSearchTime": "0.04",
+    "totalResults": "17",
+    "formattedTotalResults": "17"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Brazil | www.thoughtworks.com",
+      "htmlTitle": "Brazil | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/brazil",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Rapid prototyping libraries were created to bridge this, taking care of much of the   ... fostering conversations about languages, technologies, tools and platforms.",
+      "htmlSnippet": "Rapid prototyping libraries were created to bridge this, taking <b>care</b> of much of the <br>  <b>...</b> fostering conversations about <b>languages</b>, technologies, tools and platforms.",
+      "cacheId": "y9fHklPB1dAJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/brazil",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/brazil",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://3.bp.blogspot.com/-UQhPrao2JDY/T2iiruNJhmI/AAAAAAAAAIg/HhFtruxni_8/s1600/Scrum.org-PIF-PSM-001.2012a.JPG"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "259",
+            "height": "194",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcTSEUbrkxxoPN4p7j-P_RIZRiGpTxE-SuSaNyOaaAckBhSSCzlUF5U6cwSe"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "The languages were designed when there was batching through punched cards.   ... Rapid prototyping libraries were created to bridge this, taking care of much of ...",
+      "htmlSnippet": "The <b>languages</b> were designed when there was batching through punched cards. <br>  <b>...</b> Rapid prototyping libraries were created to bridge this, taking <b>care</b> of much of <b>...</b>",
+      "cacheId": "IgGQxki5c7EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://seandoran.files.wordpress.com/2012/04/burnupbehind2.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "317",
+            "height": "159",
+            "src": "https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQ-6-hFWDzmdB0PDGE3omgeOKkmQjW5xjZMd_8pukef0A1s-lSmZBGYqcb-"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=4",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "There were a lot of languages, probably around 25, and Dave Thomas .... Lastly   this is long so skip to the bit you care about or come along and chat at QCon ...",
+      "htmlSnippet": "There were a lot of <b>languages</b>, probably around 25, and Dave Thomas <b>....</b> Lastly <br>  this is long so skip to the bit you <b>care</b> about or come along and chat at QCon <b>...</b>",
+      "cacheId": "w3axy-q42coJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=4",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=4",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://agilewarrior.files.wordpress.com/2012/02/new-target.png?w=500"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "290",
+            "height": "174",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcQ55RRyZyMGQXUTL9sFBEE_6lHL2V8YgeSRM_mtCq4PixMXM7uNLuAv0GU"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=31",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "JavaScript as a First Class Language .... highest level package; do they scream:   health care system, or accounting system, or inventory management system?",
+      "htmlSnippet": "JavaScript as a First Class <b>Language</b> <b>....</b> highest level package; do they scream: <br>  health <b>care</b> system, or accounting system, or inventory management system?",
+      "cacheId": "Igk4KIQ0i2EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=31",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=31",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://www.iamxiaodao.com/wp-content/uploads/2011/11/jenkins-dashboard.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "250",
+            "height": "202",
+            "src": "https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcT_WzxGXaen2j3HEkDcCq5cUZiWSeDHKjnW9xZor5l34vqNHcY6WJaRps8Y"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=3",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Ironically, Java is ill-suited as a language to support this. ..... in the overall product   development process rather than just knowing or caring about their little piece.",
+      "htmlSnippet": "Ironically, Java is ill-suited as a <b>language</b> to support this. <b>.....</b> in the overall product <br>  development process rather than just knowing or <b>caring</b> about their little piece.",
+      "cacheId": "m1dhDtyoTqcJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=3",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=3",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://blogs.agilefaqs.com/wp-content/uploads/2012/02/safari_user_agent.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "258",
+            "height": "196",
+            "src": "https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcTXGSdD6yUpYfT7zFg6R3NqZ1QmxhEE2B3jH2KwBBew-Mbx16paCSAykGk"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=6",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "... software system, our reporting system lost loving attention and care from my ...   It was written in Node.js already very popular platform/language/eco-system to ...",
+      "htmlSnippet": "<b>...</b> software system, our reporting system lost loving attention and <b>care</b> from my <b>...</b> <br>  It was written in Node.js already very popular platform/<b>language</b>/eco-system to <b>...</b>",
+      "cacheId": "MvppFoSK29oJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=6",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=6",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://agileindia.org/uploads/images/ConferenceBags.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "180",
+            "height": "280",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcQAQgSAI3FaBd2jUiH8iW1RYbOSshR9VgbO79NM7RAqI27FpCyrVhHmT-4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=34",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Google have open-sourced both the VM and language, which should .... The   main ones is that it takes care of dependencies between modules, and loads   them ...",
+      "htmlSnippet": "Google have open-sourced both the VM and <b>language</b>, which should <b>....</b> The <br>  main ones is that it takes <b>care</b> of dependencies between modules, and loads <br>  them <b>...</b>",
+      "cacheId": "lSonXU691DsJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=34",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=34",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://martinfowler.com/bliki/images/goto2011/aarhus.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "275",
+            "height": "183",
+            "src": "https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcRIZ665dlQsXxvmJiFX25TKhhnVA-kMdRAuJfVC5rnQ_ttNuTgteRVt4nen"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=37",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "But we didn't get approval in time and the product owner didn't care. You see .....   on classes has been lacking in common programming languages/ecosystems.",
+      "htmlSnippet": "But we didn&#39;t get approval in time and the product owner didn&#39;t <b>care</b>. You see <b>.....</b> <br>  on classes has been lacking in common programming <b>languages</b>/ecosystems.",
+      "cacheId": "rtiQ-im_M6oJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=37",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=37"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=5",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "2012年3月11日 ... Pretty much every company says they care about their employees. ..... Erlang has   been a language that's been on my long list of “stuff to get ...",
+      "htmlSnippet": "2012年3月11日 <b>...</b> Pretty much every company says they <b>care</b> about their employees. <b>.....</b> Erlang has <br>  been a <b>language</b> that&#39;s been on my long list of “stuff to get <b>...</b>",
+      "cacheId": "XUP-x12U6sYJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=5",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=5",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://distilleryimage8.s3.amazonaws.com/64cd497c5c4b11e180c9123138016265_7.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "225",
+            "height": "225",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcR8vq294sQSWSSIIZasoYG00RgGUY-4_1kypA1ymwpC5bhW6tPUSWY1M6fH"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=1",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Where they didn't care to look, I soon learned it was safe to ignore this area. .....   The normal imperative language way of doing that would be to create a map or ...",
+      "htmlSnippet": "Where they didn&#39;t <b>care</b> to look, I soon learned it was safe to ignore this area. <b>.....</b> <br>  The normal imperative <b>language</b> way of doing that would be to create a map or <b>...</b>",
+      "cacheId": "RYPvnH9Od3cJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=1",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=1",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://1.bp.blogspot.com/-OF3ZCtmiprg/T3H4HIyp3SI/AAAAAAAACJ8/2Rkj_Cv6z6A/s320/technology-radar-brazil-2012.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "256",
+            "height": "156",
+            "src": "https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcTCKnqi_aLuKsR76iVwgRsvVkUOGZsi4o4xQFTpkREGVPHZuoOSad3DLWv4"
+          }
+        ]
+      }
+    }
+  ]
+}

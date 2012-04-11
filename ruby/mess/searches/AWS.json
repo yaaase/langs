@@ -1,0 +1,264 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "nextPage": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs AWS",
+        "totalResults": "12",
+        "searchTerms": "site:thoughtworks.com/blogs AWS",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ],
+    "request": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs AWS",
+        "totalResults": "12",
+        "searchTerms": "site:thoughtworks.com/blogs AWS",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ]
+  },
+  "context": {
+    "title": "Custom Search"
+  },
+  "searchInformation": {
+    "searchTime": 0.061929,
+    "formattedSearchTime": "0.06",
+    "totalResults": "12",
+    "formattedTotalResults": "12"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=1",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Following on from a previous post on AWS APIs, I made a comment about the   Dynamo DB and to what degree it's achieved RESTful nirvana according to the ...",
+      "htmlSnippet": "Following on from a previous post on <b>AWS</b> APIs, I made a comment about the <br>  Dynamo DB and to what degree it&#39;s achieved RESTful nirvana according to the <b>...</b>",
+      "cacheId": "RYPvnH9Od3cJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=1",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=1",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://1.bp.blogspot.com/-OF3ZCtmiprg/T3H4HIyp3SI/AAAAAAAACJ8/2Rkj_Cv6z6A/s320/technology-radar-brazil-2012.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "256",
+            "height": "156",
+            "src": "https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcTCKnqi_aLuKsR76iVwgRsvVkUOGZsi4o4xQFTpkREGVPHZuoOSad3DLWv4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=3",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Furthermore, given AWS is based on commodity hardware which is literally   failing all ... Indeed, AWS much published thoughts on 2-pizza teams will   naturally ...",
+      "htmlSnippet": "Furthermore, given <b>AWS</b> is based on commodity hardware which is literally <br>  failing all <b>...</b> Indeed, <b>AWS</b> much published thoughts on 2-pizza teams will <br>  naturally <b>...</b>",
+      "cacheId": "iuziDuUdRWMJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=3",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=3",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://3.bp.blogspot.com/-UQhPrao2JDY/T2iiruNJhmI/AAAAAAAAAIg/HhFtruxni_8/s1600/Scrum.org-PIF-PSM-001.2012a.JPG"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "259",
+            "height": "194",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcTSEUbrkxxoPN4p7j-P_RIZRiGpTxE-SuSaNyOaaAckBhSSCzlUF5U6cwSe"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Continuous Delivery | www.thoughtworks.com",
+      "htmlTitle": "Continuous Delivery | www.thoughtworks.com",
+      "link": "http://continuous-delivery.thoughtworks.com/blogs",
+      "displayLink": "continuous-delivery.thoughtworks.com",
+      "snippet": "Feb 16, 2012 ... First, create a bucket in S3, using either the AWS Console or your favorite ...   Notice that we are using environment variables to store the AWS ...",
+      "htmlSnippet": "Feb 16, 2012 <b>...</b> First, create a bucket in S3, using either the <b>AWS</b> Console or your favorite <b>...</b> <br>  Notice that we are using environment variables to store the <b>AWS</b> <b>...</b>",
+      "cacheId": "802xE9JA3tUJ",
+      "formattedUrl": "continuous-delivery.thoughtworks.com/blogs",
+      "htmlFormattedUrl": "continuous-delivery.thoughtworks.com/blogs",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://kief.com/images/waterfall.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "183",
+            "height": "275",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcSPbeTA_yh1Vjz7jA1BcuVT0HLZsgZwh5RbT4I_PivPk5OTljDEyx9Y1ns"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Brazil | www.thoughtworks.com",
+      "htmlTitle": "Brazil | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/brazil?page=2",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "... gratuita. http://aws.amazon.com – A Amazon WebServices provê uma série de   APIs para os serviços que podem ser testados na parte gratuita da Amazon.",
+      "htmlSnippet": "<b>...</b> gratuita. http://<b>aws</b>.amazon.com – A Amazon WebServices provê uma série de <br>  APIs para os serviços que podem ser testados na parte gratuita da Amazon.",
+      "cacheId": "Ict9wwWuySoJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/brazil?page=2",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/brazil?page=2"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=2",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "The RDS services have been around in the AWS stack since mid 2009 whilst ... (  As a side note, I suspect the actual web service APIs provided by AWS are ...",
+      "htmlSnippet": "The RDS services have been around in the <b>AWS</b> stack since mid 2009 whilst <b>...</b> (<br>  As a side note, I suspect the actual web service APIs provided by <b>AWS</b> are <b>...</b>",
+      "cacheId": "K_t-bojtCkIJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=2",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=2"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=3",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Some, like the now-infamous cardiac monitoring startup that was based on AWS   and as a result lost connections to their patients (a potentially life-threatening ...",
+      "htmlSnippet": "Some, like the now-infamous cardiac monitoring startup that was based on <b>AWS</b> <br>  and as a result lost connections to their patients (a potentially life-threatening <b>...</b>",
+      "cacheId": "m1dhDtyoTqcJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=3",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=3",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://blogs.agilefaqs.com/wp-content/uploads/2012/02/safari_user_agent.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "258",
+            "height": "196",
+            "src": "https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcTXGSdD6yUpYfT7zFg6R3NqZ1QmxhEE2B3jH2KwBBew-Mbx16paCSAykGk"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Brazil | www.thoughtworks.com",
+      "htmlTitle": "Brazil | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/brazil?page=1",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "If you are wondering how to activate the Amazon SES SMTP server, check this   out: https://console.aws.amazon.com/ses/home#smtp-settings: Categories: Brazil ...",
+      "htmlSnippet": "If you are wondering how to activate the Amazon SES SMTP server, check this <br>  out: https://console.<b>aws</b>.amazon.com/ses/home#smtp-settings: Categories: Brazil <b>...</b>",
+      "cacheId": "BFOBRSKCtZkJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/brazil?page=1",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/brazil?page=1",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://blog.franktrindade.com/wp-content/uploads/2012/02/photo-4-300x263.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "240",
+            "height": "210",
+            "src": "https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcQGBOUxk0PUeAVAB1QQf0Bua7uchUvXXeOuB6ZrGRcvWG1OVDMWTUofnMfR"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=37",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Creating job flows using AWS MapReduce's GUI is pretty simple and very straight   forward. But i wanted to use Java SDK to create/run jobs in MapReduce.",
+      "htmlSnippet": "Creating job flows using <b>AWS</b> MapReduce&#39;s GUI is pretty simple and very straight <br>  forward. But i wanted to use Java SDK to create/run jobs in MapReduce.",
+      "cacheId": "rtiQ-im_M6oJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=37",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=37"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=31",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Amazon AWS requires the use of templates (AMIs), for example. In either case,   exploiting automation more fully in the provisioning phase favours the case for ...",
+      "htmlSnippet": "Amazon <b>AWS</b> requires the use of templates (AMIs), for example. In either case, <br>  exploiting automation more fully in the provisioning phase favours the case for <b>...</b>",
+      "cacheId": "Igk4KIQ0i2EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=31",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=31",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://www.iamxiaodao.com/wp-content/uploads/2011/11/jenkins-dashboard.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "250",
+            "height": "202",
+            "src": "https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcT_WzxGXaen2j3HEkDcCq5cUZiWSeDHKjnW9xZor5l34vqNHcY6WJaRps8Y"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=7",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "... gratuita. http://aws.amazon.com – A Amazon WebServices provê uma série de   APIs para os serviços que podem ser testados na parte gratuita da Amazon.",
+      "htmlSnippet": "<b>...</b> gratuita. http://<b>aws</b>.amazon.com – A Amazon WebServices provê uma série de <br>  APIs para os serviços que podem ser testados na parte gratuita da Amazon.",
+      "cacheId": "vLIB8upuf4EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=7",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=7",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://getfile8.posterous.com/getfile/files.posterous.com/temp-2012-01-14/GsrtCpufoggvmzewEmldwoHJqksbveEqrgFmjEgDcyHECIcAaJrAmEbleAen/2009101313080460.jpg.scaled750.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "259",
+            "height": "194",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcR8AIE24TrSGDGciuGGXJNsLTHV1eLjeZQ1asqCBkL4qXZT3YIgSndU7l0"
+          }
+        ]
+      }
+    }
+  ]
+}

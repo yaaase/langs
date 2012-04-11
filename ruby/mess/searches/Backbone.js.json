@@ -1,0 +1,97 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs Backbone.js",
+        "totalResults": "3",
+        "searchTerms": "site:thoughtworks.com/blogs Backbone.js",
+        "count": 3,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ]
+  },
+  "context": {
+    "title": "Custom Search"
+  },
+  "searchInformation": {
+    "searchTime": 0.031964,
+    "formattedSearchTime": "0.03",
+    "totalResults": "3",
+    "formattedTotalResults": "3"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "With these in mind, I joined a group of friends and we started to work in a new   library, Vitosto JS. View To Storage in JavaScript. The idea is lower down the ...",
+      "htmlSnippet": "With these in mind, I joined a group of friends and we started to work in a new <br>  library, Vitosto <b>JS</b>. View To Storage in JavaScript. The idea is lower down the <b>...</b>",
+      "cacheId": "IgGQxki5c7EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://seandoran.files.wordpress.com/2012/04/burnupbehind2.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "317",
+            "height": "159",
+            "src": "https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQ-6-hFWDzmdB0PDGE3omgeOKkmQjW5xjZMd_8pukef0A1s-lSmZBGYqcb-"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "It's built on MrDoob's (excellent) three.js library, which brings 3D programming to   mortals. If you work with .... We had a problem with backbone and JQuery.",
+      "htmlSnippet": "It&#39;s built on MrDoob&#39;s (excellent) three.<b>js</b> library, which brings 3D programming to <br>  mortals. If you work with <b>....</b> We had a problem with <b>backbone</b> and JQuery.",
+      "cacheId": "jUe48RcYBZYJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=12",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "I noticed a similar thing in the underscore.js code but in that case the '&&'   operator ..... Here's the template, in canonical Backbone (hidden inside a <script>   tag): ...",
+      "htmlSnippet": "I noticed a similar thing in the underscore.<b>js</b> code but in that case the &#39;&amp;&amp;&#39; <br>  operator <b>.....</b> Here&#39;s the template, in canonical <b>Backbone</b> (hidden inside a &lt;script&gt; <br>  tag): <b>...</b>",
+      "cacheId": "oLnA3iNohSgJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=12",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=12",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://paulhammant.com/images/todo_angular.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "300",
+            "height": "168",
+            "src": "https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcSJXdYycRCvUXQefUrBntJAxRrnfYhhzI-woGlWcWWd-VA-2sHYtD4IYdbo"
+          }
+        ]
+      }
+    }
+  ]
+}

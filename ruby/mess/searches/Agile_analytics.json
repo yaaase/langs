@@ -1,0 +1,225 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs Agile analytics",
+        "totalResults": "9",
+        "searchTerms": "site:thoughtworks.com/blogs Agile analytics",
+        "count": 9,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ]
+  },
+  "context": {
+    "title": "Custom Search"
+  },
+  "searchInformation": {
+    "searchTime": 0.047581,
+    "formattedSearchTime": "0.05",
+    "totalResults": "9",
+    "formattedTotalResults": "9"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=3",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "If you have ever been in an Agile project, or something that looks like it, you   should have heard about ...... From http://www.analysis-one.com/kpi-analysis.  aspx ...",
+      "htmlSnippet": "If you have ever been in an <b>Agile</b> project, or something that looks like it, you <br>  should have heard about <b>......</b> From http://www.<b>analysis</b>-one.com/kpi-<b>analysis</b>.<br>  aspx <b>...</b>",
+      "cacheId": "iuziDuUdRWMJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=3",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=3",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://3.bp.blogspot.com/-UQhPrao2JDY/T2iiruNJhmI/AAAAAAAAAIg/HhFtruxni_8/s1600/Scrum.org-PIF-PSM-001.2012a.JPG"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "259",
+            "height": "194",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcTSEUbrkxxoPN4p7j-P_RIZRiGpTxE-SuSaNyOaaAckBhSSCzlUF5U6cwSe"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=2",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Filed under: agile Tagged: agile japan, agile training, japan ..... I was poking   around analytics stats for DueProps and noticed that my users are not fans of ...",
+      "htmlSnippet": "Filed under: <b>agile</b> Tagged: <b>agile</b> japan, <b>agile</b> training, japan <b>.....</b> I was poking <br>  around <b>analytics</b> stats for DueProps and noticed that my users are not fans of <b>...</b>",
+      "cacheId": "x2z4_LXgEd8J",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=2",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=2"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Testing | www.thoughtworks.com",
+      "htmlTitle": "Testing | www.thoughtworks.com",
+      "link": "http://testing.thoughtworks.com/blogs",
+      "displayLink": "testing.thoughtworks.com",
+      "snippet": "Business Analysis - Beyond Technical & Communication Skills - Anil Dagia .....   For now, I am preparing for vodQA Bangalore - \"Agile Testing for Teams and ...",
+      "htmlSnippet": "Business <b>Analysis</b> - Beyond Technical &amp; Communication Skills - Anil Dagia <b>.....</b> <br>  For now, I am preparing for vodQA Bangalore - &quot;<b>Agile</b> Testing for Teams and <b>...</b>",
+      "cacheId": "8rzD_OtfDPMJ",
+      "formattedUrl": "testing.thoughtworks.com/blogs",
+      "htmlFormattedUrl": "testing.thoughtworks.com/blogs",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://arquivo.oficinabrasil.com.br/edicoes/SET_2002/ford5.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "260",
+            "height": "194",
+            "src": "https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcSegwcKRJNo_nmj3PSm5De2MsE5la6j_9Gh6tw1_UI4f87V0DZfybvZga1K"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "If you've not read Jurgen's book on \"Leading Agile Developers, Developing Agile   Leaders\", ..... Reporting and analytics on Big Data must be more fluid. There's ...",
+      "htmlSnippet": "If you&#39;ve not read Jurgen&#39;s book on &quot;Leading <b>Agile</b> Developers, Developing <b>Agile</b> <br>  Leaders&quot;, <b>.....</b> Reporting and <b>analytics</b> on Big Data must be more fluid. There&#39;s <b>...</b>",
+      "cacheId": "jUe48RcYBZYJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "As an Agile project manager with scheduled release dates, you are probably   using ... As an Agile program manager, you are probably reviewing burn up   charts ...",
+      "htmlSnippet": "As an <b>Agile</b> project manager with scheduled release dates, you are probably <br>  using <b>...</b> As an <b>Agile</b> program manager, you are probably reviewing burn up <br>  charts <b>...</b>",
+      "cacheId": "IgGQxki5c7EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://seandoran.files.wordpress.com/2012/04/burnupbehind2.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "317",
+            "height": "159",
+            "src": "https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQ-6-hFWDzmdB0PDGE3omgeOKkmQjW5xjZMd_8pukef0A1s-lSmZBGYqcb-"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=5",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Final Profile of all the Registered Agile India 2012 Delegates ... International   Hewlett Packard Host Analytics Software Pvt Ltd Huawei Technologies India Pvt.",
+      "htmlSnippet": "Final Profile of all the Registered <b>Agile</b> India 2012 Delegates <b>...</b> International <br>  Hewlett Packard Host <b>Analytics</b> Software Pvt Ltd Huawei Technologies India Pvt.",
+      "cacheId": "24ypS5cJNq8J",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=5",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=5",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://agileindia.org/uploads/images/experience.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "290",
+            "height": "174",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcQDAdg_Xe3dma-UsOO-B--nvpqCa45Gn2S0NAE9H9Ho9fmYg9jvoGpm58mH"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=34",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "You are doing Agile – including the parts like pairing and TDD that lots of ..... this   SAN gives great performance + analytics while using neglibile amounts of CPU.",
+      "htmlSnippet": "You are doing <b>Agile</b> – including the parts like pairing and TDD that lots of <b>.....</b> this <br>  SAN gives great performance + <b>analytics</b> while using neglibile amounts of CPU.",
+      "cacheId": "lSonXU691DsJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=34",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=34",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://martinfowler.com/bliki/images/goto2011/aarhus.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "275",
+            "height": "183",
+            "src": "https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcRIZ665dlQsXxvmJiFX25TKhhnVA-kMdRAuJfVC5rnQ_ttNuTgteRVt4nen"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=8",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "2012年2月27日 ... Mingle - Agile Project Management · Go - Agile Release ... Yet, run-off-the-mill   analytics software only offer a broad picture of user engagement.",
+      "htmlSnippet": "2012年2月27日 <b>...</b> Mingle - <b>Agile</b> Project Management &middot; Go - <b>Agile</b> Release <b>...</b> Yet, run-off-the-mill <br>  <b>analytics</b> software only offer a broad picture of user engagement.",
+      "cacheId": "ssRQoWfKLZ0J",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=8",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=8",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://www.iamhukai.com/wp-content/uploads/2012/02/Maslon.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "244",
+            "height": "206",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcT6uv1Ju5zYQyzLVr6G_LWCvycU6vH6YnX9XCc5I-zJQpE12cb3XRiGlng"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=35",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Now I'd heard of The famed DTrace Analytics that somes as part of the Sun ....   The fifteen minute meeting is a familiar concept within agile, known as the   standup ...",
+      "htmlSnippet": "Now I&#39;d heard of The famed DTrace <b>Analytics</b> that somes as part of the Sun <b>....</b> <br>  The fifteen minute meeting is a familiar concept within <b>agile</b>, known as the <br>  standup <b>...</b>",
+      "cacheId": "mExcsuo4oL4J",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=35",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=35"
+    }
+  ]
+}

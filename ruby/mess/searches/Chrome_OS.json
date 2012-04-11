@@ -1,0 +1,173 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs Chrome OS",
+        "totalResults": "7",
+        "searchTerms": "site:thoughtworks.com/blogs Chrome OS",
+        "count": 7,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ]
+  },
+  "context": {
+    "title": "Custom Search"
+  },
+  "searchInformation": {
+    "searchTime": 0.032249,
+    "formattedSearchTime": "0.03",
+    "totalResults": "7",
+    "formattedTotalResults": "7"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Brazil | www.thoughtworks.com",
+      "htmlTitle": "Brazil | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/brazil?page=2",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "OS X launchd spawn processes and manage them, you can actually make use of   it to help you out on OS X automation. I had the same exactly thought that ...",
+      "htmlSnippet": "<b>OS</b> X launchd spawn processes and manage them, you can actually make use of <br>  it to help you out on <b>OS</b> X automation. I had the same exactly thought that <b>...</b>",
+      "cacheId": "Ict9wwWuySoJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/brazil?page=2",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/brazil?page=2"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=3",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "As a sidenote, I've tried the Safari and Chrome's inspector modules and they don'  t ... They must release a great touch-capable OS for all the tablet/slate devices ...",
+      "htmlSnippet": "As a sidenote, I&#39;ve tried the Safari and <b>Chrome&#39;s</b> inspector modules and they don&#39;<br>  t <b>...</b> They must release a great touch-capable <b>OS</b> for all the tablet/slate devices <b>...</b>",
+      "cacheId": "m1dhDtyoTqcJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=3",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=3",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://blogs.agilefaqs.com/wp-content/uploads/2012/02/safari_user_agent.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "258",
+            "height": "196",
+            "src": "https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcTXGSdD6yUpYfT7zFg6R3NqZ1QmxhEE2B3jH2KwBBew-Mbx16paCSAykGk"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Bad news for Java, C# and Python coders though, it seems that as of now setting   chrome preference is not supported in the java version of Webdrive. Your best ...",
+      "htmlSnippet": "Bad news for Java, C# and Python coders though, it seems that as of now setting <br>  <b>chrome</b> preference is not supported in the java version of Webdrive. Your best <b>...</b>",
+      "cacheId": "IgGQxki5c7EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=31",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "Note: Tab Slideshow for Chrome does not seem to refresh the tabs where as the   .... on the brainless rote-work of menu-clicking through OS installation work.",
+      "htmlSnippet": "Note: Tab Slideshow for <b>Chrome</b> does not seem to refresh the tabs where as the <br>  <b>....</b> on the brainless rote-work of menu-clicking through <b>OS</b> installation work.",
+      "cacheId": "Igk4KIQ0i2EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=31",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=31",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://www.iamxiaodao.com/wp-content/uploads/2011/11/jenkins-dashboard.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "250",
+            "height": "202",
+            "src": "https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcT_WzxGXaen2j3HEkDcCq5cUZiWSeDHKjnW9xZor5l34vqNHcY6WJaRps8Y"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=4",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "I could not figure out how to enable this on safari or chrome. ..... Muitas vezes as   equipes voltam para os momentos de “loucura” e se esquecem que a melhor ...",
+      "htmlSnippet": "I could not figure out how to enable this on safari or <b>chrome</b>. <b>.....</b> Muitas vezes as <br>  equipes voltam para <b>os</b> momentos de “loucura” e se esquecem que a melhor <b>...</b>",
+      "cacheId": "w3axy-q42coJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=4",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=4",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://agilewarrior.files.wordpress.com/2012/02/new-target.png?w=500"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "290",
+            "height": "174",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcQ55RRyZyMGQXUTL9sFBEE_6lHL2V8YgeSRM_mtCq4PixMXM7uNLuAv0GU"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=7",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "... an indication of the load time for our application in Chrome and IE, and some ...   APIs para os serviços que podem ser testados na parte gratuita da Amazon.",
+      "htmlSnippet": "<b>...</b> an indication of the load time for our application in <b>Chrome</b> and IE, and some <b>...</b> <br>  APIs para <b>os</b> serviços que podem ser testados na parte gratuita da Amazon.",
+      "cacheId": "vLIB8upuf4EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=7",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=7",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://getfile8.posterous.com/getfile/files.posterous.com/temp-2012-01-14/GsrtCpufoggvmzewEmldwoHJqksbveEqrgFmjEgDcyHECIcAaJrAmEbleAen/2009101313080460.jpg.scaled750.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "259",
+            "height": "194",
+            "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcR8AIE24TrSGDGciuGGXJNsLTHV1eLjeZQ1asqCBkL4qXZT3YIgSndU7l0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=36",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "With KVM based guest OS, you can trace all manner of performance and ..... TW   Mail is typically open on it; Chrome for all personal work - typically have my ...",
+      "htmlSnippet": "With KVM based guest <b>OS</b>, you can trace all manner of performance and <b>.....</b> TW <br>  Mail is typically open on it; <b>Chrome</b> for all personal work - typically have my <b>...</b>",
+      "cacheId": "yr5MHOsu4TwJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=36",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=36"
+    }
+  ]
+}

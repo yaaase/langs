@@ -1,0 +1,97 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - site:thoughtworks.com/blogs Buying solutions you can only afford one of",
+        "totalResults": "3",
+        "searchTerms": "site:thoughtworks.com/blogs Buying solutions you can only afford one of",
+        "count": 3,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "013036536707430787589:_pqjad5hr1a"
+      }
+    ]
+  },
+  "context": {
+    "title": "Custom Search"
+  },
+  "searchInformation": {
+    "searchTime": 0.071208,
+    "formattedSearchTime": "0.07",
+    "totalResults": "3",
+    "formattedTotalResults": "3"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=31",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "In Scala, you can use the underscore ( _ ) to refer to an argument you are lazy to   name. ... Also the reports do not change as rapidly as the build and can afford to   be ...... It is true that the industry generally no longer does vertical scaling –   buying .... in-house solutions for static content, in terms of hardware you only   have one ...",
+      "htmlSnippet": "In Scala, <b>you can</b> use the underscore ( _ ) to refer to an argument you are lazy to <br>  name. <b>...</b> Also the reports do not change as rapidly as the build and can <b>afford</b> to <br>  be <b>......</b> It is true that the industry generally no longer does vertical scaling – <br>  <b>buying</b> <b>....</b> in-house <b>solutions</b> for static content, in terms of hardware you <b>only</b> <br>  have <b>one</b> <b>...</b>",
+      "cacheId": "Igk4KIQ0i2EJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=31",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=31",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://www.iamxiaodao.com/wp-content/uploads/2011/11/jenkins-dashboard.png"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "250",
+            "height": "202",
+            "src": "https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcT_WzxGXaen2j3HEkDcCq5cUZiWSeDHKjnW9xZor5l34vqNHcY6WJaRps8Y"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "htmlTitle": "ThoughtWorks Alumni | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/alumni%20?page=1",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "This is intended as part one of a series, as it's a basic and high-level view .... Or   you can read the reproduction of it here, for those of you too lazy to click the link.   ... This is the solution that actually looks alright, and it's not until the picture ... “We   don't spend enough time driving nails around here to justify buying a nail gun.",
+      "htmlSnippet": "This is intended as part <b>one of</b> a series, as it&#39;s a basic and high-level view <b>....</b> Or <br>  <b>you can</b> read the reproduction of it here, for those of you too lazy to click the link. <br>  <b>...</b> This is the <b>solution</b> that actually looks alright, and it&#39;s not until the picture <b>...</b> “We <br>  don&#39;t spend enough time driving nails around here to justify <b>buying</b> a nail gun.",
+      "cacheId": "iK7gyGABQ5cJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=1",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/alumni%20?page=1"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current ThoughtWorkers | www.thoughtworks.com",
+      "htmlTitle": "Current ThoughtWorkers | www.thoughtworks.com",
+      "link": "http://www.thoughtworks.com/blogs/current?page=33",
+      "displayLink": "www.thoughtworks.com",
+      "snippet": "It's a topic that's already had too many books on it, but I added this one to the ...   An important, yet not well understood factor is the rate at which you can ... Only   once that design has settled down should you think of increasing the ... As I   mentioned in my previous post I've had particular trouble finding a good solution   to code ...",
+      "htmlSnippet": "It&#39;s a topic that&#39;s already had too many books on it, but I added this <b>one</b> to the <b>...</b> <br>  An important, yet not well understood factor is the rate at which <b>you can</b> <b>...</b> <b>Only</b> <br>  once that design has settled down should you think of increasing the <b>...</b> As I <br>  mentioned in my previous post I&#39;ve had particular trouble finding a good <b>solution</b> <br>  to code <b>...</b>",
+      "cacheId": "g9_sZZkTILwJ",
+      "formattedUrl": "www.thoughtworks.com/blogs/current?page=33",
+      "htmlFormattedUrl": "www.thoughtworks.com/blogs/current?page=33",
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://martinfowler.com/photos/16.jpg"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "width": "275",
+            "height": "183",
+            "src": "https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcQHLdRD6HmJo0GFULO0iujM_wlJP5TacPySg-A-CfnLjLcODGsUXTjd0ZQ9"
+          }
+        ]
+      }
+    }
+  ]
+}
