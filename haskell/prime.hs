@@ -8,9 +8,6 @@ module Main where
     | True `elem` [x `mod` n == 0 | n <- [3,5..truncate (sqrt (fromIntegral x))]] = False
     | otherwise                                                                   = True
 
-  nextPrime :: Integer -> Integer 
-  nextPrime n = if prime (n + 1) then n + 1 else nextPrime (n + 1)
-
   primeNth x = head (drop (x - 1) (take (x) [n | n <- [1..], prime n]))
 
   primeFactor :: Integer -> Integer -> Integer
@@ -18,6 +15,13 @@ module Main where
     | n == x             = x
     | (x `mod` n == 0)   = primeFactor n (x `div` n)
     | otherwise          = primeFactor (nextPrime n) x
+
+  largestPrimeFactor x = primeFactor 2 x
+
+  -- bad code begins here --
+
+  nextPrime :: Integer -> Integer 
+  nextPrime n = if prime (n + 1) then n + 1 else nextPrime (n + 1)
 
   sumOfPrimes :: Integer -> Integer -> Integer -> Integer
   sumOfPrimes x i n
