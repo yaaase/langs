@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Action	player.rb	/^class Action$/;"	c
+ActionFactory	player.rb	/^class ActionFactory$/;"	c
+Attack	player.rb	/^class Attack < Action$/;"	c
+Player	player.rb	/^class Player$/;"	c
+Rest	player.rb	/^class Rest < Action$/;"	c
+Walk	player.rb	/^class Walk < Action$/;"	c
+act!	player.rb	/^  def act!$/;"	f	class:Action
+act!	player.rb	/^  def act!$/;"	f	class:Attack
+act!	player.rb	/^  def act!$/;"	f	class:Rest
+act!	player.rb	/^  def act!$/;"	f	class:Walk
+create_action!	player.rb	/^  def create_action!$/;"	f	class:ActionFactory
+create_walk_or_attack_action!	player.rb	/^  def create_walk_or_attack_action!$/;"	f	class:ActionFactory
+initialize	player.rb	/^  def initialize$/;"	f	class:Player
+initialize	player.rb	/^  def initialize(warrior)$/;"	f	class:Action
+initialize	player.rb	/^  def initialize(warrior, prev_health, health)$/;"	f	class:ActionFactory
+play_turn	player.rb	/^  def play_turn(warrior)$/;"	f	class:Player
+player.rb	player.rb	1;"	F
+safe_to_rest?	player.rb	/^  def safe_to_rest?$/;"	f	class:ActionFactory
+should_rest?	player.rb	/^  def should_rest?$/;"	f	class:ActionFactory
+under_attack?	player.rb	/^  def under_attack?$/;"	f	class:ActionFactory
