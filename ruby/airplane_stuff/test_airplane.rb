@@ -73,4 +73,13 @@ class AirplaneTest < Test::Unit::TestCase
     assert_equal false, a.can_fly("Atlanta", "Boston", "New York")
   end
 
+  def test_they_board_in_order
+    a = Airplane.new "Atlanta", "Albany"
+    a.boarding_zones = [:one,:two,:three]
+    assert_equal :one, a.boards_next
+    a.boards_next_zone
+    assert_equal :two, a.boards_next
+    assert_equal [:one], a.boarded_zones
+  end
+
 end

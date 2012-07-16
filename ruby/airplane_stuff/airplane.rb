@@ -1,9 +1,10 @@
 class Airplane
-  attr_reader :origin, :destination, :airports
+  attr_reader :origin, :destination, :airports, :boarded_zones
 
   def initialize origin, destination
     @origin, @destination = origin, destination
     @airports = [@origin, @destination]
+    @boarded_zones = []
   end
 
   def new_route origin, destination
@@ -42,6 +43,18 @@ class Airplane
   def unique_pairs size
     return 1 if size < 3
     return (size - 1) + unique_pairs(size - 1)
+  end
+
+  def boarding_zones= zones
+    @zones = zones
+  end
+
+  def boards_next_zone
+    @boarded_zones << @zones.shift
+  end
+
+  def boards_next
+    @zones[0]
   end
 
 end
