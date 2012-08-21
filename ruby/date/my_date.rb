@@ -14,49 +14,54 @@ class MyDate
   end
 
   def <=> other
-    if @year != other.year
-      @year <=> other.year
-    elsif @month != other.month
-      MONTH[@month] <=> MONTH[other.month]
+    if year != other.year
+      year <=> other.year
+    elsif month != other.month
+      MONTH[month] <=> MONTH[other.month]
     else
-      @day <=> other.day
+      day <=> other.day
     end
   end
 
   def - other
     raise unless self > other
 
-    if @month == other.month
-      @day - other.day
+    if month == other.month
+      day - other.day
     elsif adjacent_months? other
       partial_month_days other
     else
-      total = 0
-      months_between(other.month).each do |mo|
-        total += DAYS_IN_MONTH[mo]
-      end
-      total += partial_month_days other
+      compute_days_for_non_adjacent_months other
     end
   end
 
   def == other
-    @month == other.month && @day == other.day
+    month == other.month && day == other.day
   end
 
   private
 
+  def compute_days_for_non_adjacent_months other
+    total = 0
+    months_between(other.month).each do |mo|
+      total += DAYS_IN_MONTH[mo]
+    end
+    total += partial_month_days other
+  end
+
   def adjacent_months? other
-    MONTH[@month] - MONTH[other.month] == 1
+    MONTH[month] - MONTH[other.month] == 1
   end
 
   def partial_month_days other
-    @day + (DAYS_IN_MONTH[other.month] - other.day)
+    day + (DAYS_IN_MONTH[other.month] - other.day)
   end
 
-  def months_between month
+  def months_between other_month
     between = []
     MONTH.each_pair do |mo, num|
-      between << mo if MONTH[@month] > num && num > MONTH[month]
+      between << mo if MONTH[month] > num &&
+                       num > MONTH[other_month]
     end
     between
   end

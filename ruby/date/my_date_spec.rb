@@ -54,7 +54,7 @@ describe MyDate do
     end
 
     it "will not accept invalid month input" do
-      expect{MyDate.new(:foo,1,2012)}.to raise_error
+      expect{MyDate.new("foo",1,2012)}.to raise_error
     end
 
     it "will not accept invalid year format" do
