@@ -26,6 +26,75 @@ class MyDate
   def - other
     raise unless self > other
 
+    if year == other.year
+      days_between_within_same_year other
+    elsif adjacent_year? other
+      partial_year_days other
+    else
+      years_between(other) +
+        partial_year_days(other)
+    end
+  end
+
+  def == other
+    year == other.year &&
+    month == other.month &&
+    day == other.day
+  end
+
+  def leap_year?
+    if year % 400 == 0
+      true
+    elsif year % 100 == 0
+      false
+    elsif year % 4 == 0
+      true
+    else
+      false
+    end
+  end
+
+  private
+
+  def years_between other
+    (year - other.year - 1) * 365
+  end
+
+  def partial_year_days other
+    days_into_year + other.send(:days_til_end_of_year)
+  end
+
+  def adjacent_year? other
+    year - other.year == 1
+  end
+
+  def days_into_year
+    return days_into_month if month == :jan
+    finish, sum = (MONTH[month] - 2), 0
+    MONTH.keys[0..finish].each do |mon|
+      sum += DAYS_IN_MONTH[mon]
+    end
+    sum + days_into_month
+  end
+
+  def days_til_end_of_year
+    return days_til_end_of_month if month == :dec
+    start, sum = MONTH[month], 0
+    MONTH.keys[start..-1].each do |mon|
+      sum += DAYS_IN_MONTH[mon]
+    end
+    sum + days_til_end_of_month
+  end
+
+  def days_into_month
+    day - 1
+  end
+
+  def days_til_end_of_month
+    DAYS_IN_MONTH[month] - day
+  end
+
+  def days_between_within_same_year other
     if month == other.month
       day - other.day
     elsif adjacent_months? other
@@ -34,12 +103,6 @@ class MyDate
       compute_days_for_non_adjacent_months other
     end
   end
-
-  def == other
-    month == other.month && day == other.day
-  end
-
-  private
 
   def compute_days_for_non_adjacent_months other
     total = 0
