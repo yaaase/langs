@@ -75,7 +75,7 @@ class MyDate
   end
 
   def partial_year_days other
-    days_into_year - 1 +
+    days_into_year +
       other.send(:days_til_end_of_year)
   end
 

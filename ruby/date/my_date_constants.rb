@@ -26,7 +26,7 @@ module MyDateConstants
     :aug => 31,
     :sep => 30,
     :oct => 31,
-    :nov => 31,
+    :nov => 30,
     :dec => 31
   }
 
@@ -41,7 +41,7 @@ module MyDateConstants
     :aug => 31,
     :sep => 30,
     :oct => 31,
-    :nov => 31,
+    :nov => 30,
     :dec => 31
   }
 

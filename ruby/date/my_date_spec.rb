@@ -45,9 +45,9 @@ describe MyDate do
       (MyDate.new(:dec,30,2012).send(:days_til_end_of_year)).
         should == 1
       (MyDate.new(:nov,30,2012).send(:days_til_end_of_year)).
-        should == 32
+        should == 31
       (MyDate.new(:oct,30,2012).send(:days_til_end_of_year)).
-        should == 63
+        should == 62
     end
 
     it "knows how many days into the year" do
@@ -96,8 +96,17 @@ describe MyDate do
         should be_false
     end
 
+    it "knows which day key to use" do
+      MyDate.new(:jan,1,2012).instance_variable_get(:@days_key)[:feb].
+        should == 29
+      MyDate.new(:jan,1,2011).instance_variable_get(:@days_key)[:feb].
+        should == 28
+    end
+
     it "knows days when they cross leap years" do
       (MyDate.new(:mar,1,2012) - MyDate.new(:dec,31,2011)).should == 61
+      (MyDate.new(:feb,28,2012) - MyDate.new(:dec,31,2011)).should == 60
+      (MyDate.new(:feb,28,2012) - MyDate.new(:dec,31,2011)).should == 59
     end
   end
 
