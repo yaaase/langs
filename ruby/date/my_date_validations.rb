@@ -6,7 +6,7 @@ module MyDateValidations
 
   def validate month, day, year
     raise unless month_is_valid? month
-    raise unless day_is_valid? day, month
+    raise unless day_is_valid? day, month, year
     raise unless year_is_valid? year
     true
   end
@@ -15,10 +15,14 @@ module MyDateValidations
     MyDateConstants::MONTH.keys.include? month
   end
 
-  def day_is_valid? day, month
+  def day_is_valid? day, month, year
     return false unless is_integer? day
     return false if day < 1 || day.to_s.size > 2
-    return false unless MyDateConstants::DAYS_IN_MONTH[month] >= day
+    if leap_year?(year) && month == :feb
+      return false unless day <= 29
+    else
+      return false unless MyDateConstants::DAYS_IN_MONTH[month] >= day
+    end
     true
   end
 

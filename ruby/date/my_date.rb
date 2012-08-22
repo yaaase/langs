@@ -9,6 +9,10 @@ class MyDate
   attr_reader :month, :day, :year
 
   def initialize month, day, year
+    @days_key =
+      leap_year?(year) ?
+      DAYS_IN_MONTH_LEAP_YEAR :
+      DAYS_IN_MONTH
     validate month, day, year
     @month, @day, @year = month, day, year
   end
@@ -42,12 +46,12 @@ class MyDate
     day == other.day
   end
 
-  def leap_year?
-    if year % 400 == 0
+  def leap_year?(yr = @year)
+    if yr % 400 == 0
       true
-    elsif year % 100 == 0
+    elsif yr % 100 == 0
       false
-    elsif year % 4 == 0
+    elsif yr % 4 == 0
       true
     else
       false
@@ -56,12 +60,23 @@ class MyDate
 
   private
 
+  def before_leap_day?
+    leap_year? &&
+      self <= MyDate.new(:feb,28,year)
+  end
+
+  def after_leap_day?
+    leap_year? &&
+      self > MyDate.new(:feb,28,year)
+  end
+
   def years_between other
     (year - other.year - 1) * 365
   end
 
   def partial_year_days other
-    days_into_year + other.send(:days_til_end_of_year)
+    days_into_year - 1 +
+      other.send(:days_til_end_of_year)
   end
 
   def adjacent_year? other
@@ -72,7 +87,7 @@ class MyDate
     return days_into_month if month == :jan
     finish, sum = (MONTH[month] - 2), 0
     MONTH.keys[0..finish].each do |mon|
-      sum += DAYS_IN_MONTH[mon]
+      sum += @days_key[mon]
     end
     sum + days_into_month
   end
@@ -81,17 +96,17 @@ class MyDate
     return days_til_end_of_month if month == :dec
     start, sum = MONTH[month], 0
     MONTH.keys[start..-1].each do |mon|
-      sum += DAYS_IN_MONTH[mon]
+      sum += @days_key[mon]
     end
     sum + days_til_end_of_month
   end
 
   def days_into_month
-    day - 1
+    day
   end
 
   def days_til_end_of_month
-    DAYS_IN_MONTH[month] - day
+    @days_key[month] - day
   end
 
   def days_between_within_same_year other
@@ -107,7 +122,7 @@ class MyDate
   def compute_days_for_non_adjacent_months other
     total = 0
     months_between(other.month).each do |mo|
-      total += DAYS_IN_MONTH[mo]
+      total += @days_key[mo]
     end
     total += partial_month_days other
   end
@@ -117,7 +132,7 @@ class MyDate
   end
 
   def partial_month_days other
-    day + (DAYS_IN_MONTH[other.month] - other.day)
+    day + (@days_key[other.month] - other.day)
   end
 
   def months_between other_month

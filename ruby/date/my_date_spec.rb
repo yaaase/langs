@@ -31,8 +31,8 @@ describe MyDate do
     end
 
     it "days between mar 1 and jan 31 is 29" do
-      (MyDate.new(:mar,1,2012) - MyDate.new(:jan,31,2012)).should == 29
-      (MyDate.new(:apr,1,2012) - MyDate.new(:jan,31,2012)).should == 60
+      (MyDate.new(:mar,1,2012) - MyDate.new(:jan,31,2012)).should == 30
+      (MyDate.new(:apr,1,2012) - MyDate.new(:jan,31,2012)).should == 61
     end
 
     it "knows which year is greater" do
@@ -52,13 +52,13 @@ describe MyDate do
 
     it "knows how many days into the year" do
       (MyDate.new(:jan,1,2012).send(:days_into_year)).
-        should == 0
+        should == 1
       (MyDate.new(:feb,1,2012).send(:days_into_year)).
-        should == 31
-      (MyDate.new(:feb,2,2012).send(:days_into_year)).
         should == 32
+      (MyDate.new(:feb,2,2012).send(:days_into_year)).
+        should == 33
       (MyDate.new(:mar,2,2012).send(:days_into_year)).
-        should == 60
+        should == 62
     end
 
     it "days between jan 1 2012 and nov 30 2011 is 32" do
@@ -77,6 +77,28 @@ describe MyDate do
       MyDate.new(:jan,1,1600).leap_year?.should be_true
       MyDate.new(:jan,1,1996).leap_year?.should be_true
     end
+
+    it "knows when it is after a leap day" do
+      (MyDate.new(:jan,1,2012).send(:after_leap_day?)).
+        should be_false
+      (MyDate.new(:feb,28,2012).send(:after_leap_day?)).
+        should be_false
+      (MyDate.new(:mar,1,2012).send(:after_leap_day?)).
+        should be_true
+    end
+
+    it "knows when it is before a leap day" do
+      (MyDate.new(:jan,1,2012).send(:before_leap_day?)).
+        should be_true
+      (MyDate.new(:feb,28,2012).send(:before_leap_day?)).
+        should be_true
+      (MyDate.new(:mar,1,2012).send(:before_leap_day?)).
+        should be_false
+    end
+
+    it "knows days when they cross leap years" do
+      (MyDate.new(:mar,1,2012) - MyDate.new(:dec,31,2011)).should == 61
+    end
   end
 
   context "exceptions" do
@@ -90,6 +112,7 @@ describe MyDate do
     it "will not accept invalid date input" do
       expect{MyDate.new(:jan,0,2012)}.to raise_error
       expect{MyDate.new(:jan,40,2012)}.to raise_error
+      expect{MyDate.new(:feb,29,2012)}.to_not raise_error
       expect{MyDate.new(:jan,"foo",2012)}.to raise_error
     end
 
