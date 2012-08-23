@@ -88,12 +88,12 @@ class MyDate
   end
 
   def days_into_year
-    return days_into_month if month == :jan
+    return day if month == :jan
     finish, sum = (MONTH[month] - 2), 0
     MONTH.keys[0..finish].each do |mon|
       sum += @days_key[mon]
     end
-    sum + days_into_month
+    sum + day
   end
 
   def days_til_end_of_year
@@ -103,10 +103,6 @@ class MyDate
       sum += @days_key[mon]
     end
     sum + days_til_end_of_month
-  end
-
-  def days_into_month
-    day
   end
 
   def days_til_end_of_month
@@ -147,5 +143,4 @@ class MyDate
     end
     between
   end
-
 end
