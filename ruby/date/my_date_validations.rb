@@ -26,7 +26,7 @@ module MyDateValidations
   end
 
   def year_is_valid? year
-    return false if year.to_s.size != 4
+    return false if year.to_s.size > 4
     return false unless is_integer? year
     true
   end
