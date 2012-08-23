@@ -124,7 +124,7 @@ class MyDate
     months_between(other.month).each do |mo|
       total += @days_key[mo]
     end
-    total += partial_month_days other
+    total + partial_month_days(other)
   end
 
   def adjacent_months? other

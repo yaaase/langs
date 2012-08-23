@@ -30,19 +30,6 @@ module MyDateConstants
     :dec => 31
   }
 
-  DAYS_IN_MONTH_LEAP_YEAR = {
-    :jan => 31,
-    :feb => 29,
-    :mar => 31,
-    :apr => 30,
-    :may => 31,
-    :jun => 30,
-    :jul => 31,
-    :aug => 31,
-    :sep => 30,
-    :oct => 31,
-    :nov => 30,
-    :dec => 31
-  }
+  DAYS_IN_MONTH_LEAP_YEAR = DAYS_IN_MONTH.merge :feb => 29
 
 end
