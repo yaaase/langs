@@ -71,7 +71,11 @@ class MyDate
   end
 
   def years_between other
-    (year - other.year - 1) * 365
+    sum = 0
+    (other.year + 1).upto(year - 1) do |yr|
+      sum += 1 if leap_year?(yr)
+    end
+    sum + ((year - other.year - 1) * 365)
   end
 
   def partial_year_days other

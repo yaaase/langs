@@ -108,6 +108,11 @@ describe MyDate do
       (MyDate.new(:feb,29,2012) - MyDate.new(:dec,31,2011)).should == 60
       (MyDate.new(:feb,28,2012) - MyDate.new(:dec,31,2011)).should == 59
     end
+
+    it "knows days when they cross multiple years including leap" do
+      (MyDate.new(:mar,1,2012) - MyDate.new(:dec,31,2010)).should == 426
+      (MyDate.new(:mar,1,2011) - MyDate.new(:dec,31,2007)).should == 1156
+    end
   end
 
   context "exceptions" do
