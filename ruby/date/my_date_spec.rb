@@ -103,6 +103,13 @@ describe MyDate do
         should == 28
     end
 
+    it "knows the days within leap year crossing leap day" do
+      (MyDate.new(:mar,1,2012) - MyDate.new(:feb,28,2012)).
+        should == 2
+      (MyDate.new(:apr,1,2012) - MyDate.new(:feb,28,2012)).
+        should == 33
+    end
+
     it "knows days when they cross leap years" do
       (MyDate.new(:mar,1,2012) - MyDate.new(:dec,31,2011)).should == 61
       (MyDate.new(:feb,29,2012) - MyDate.new(:dec,31,2011)).should == 60
