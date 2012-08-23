@@ -8,7 +8,6 @@ module MyDateValidations
     raise unless month_is_valid? month
     raise unless day_is_valid? day, month, year
     raise unless year_is_valid? year
-    true
   end
 
   def month_is_valid? month
