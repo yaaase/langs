@@ -1,1 +1,1 @@
-File.open("card.rb","r") { |c| while line = c.gets do puts(eval(line)) end }
+File.open("card.rb","r") { |c| while l = c.gets do puts(eval(l)) end }
