@@ -33,6 +33,21 @@ describe Parser do
       Parser.date("March 22nd, 2012").
         should == MyDate.new(:mar,22,2012)
     end
+
+    it "Jan 1st 2012 is valid" do
+      Parser.date("Jan 1st 2012").
+        should == MyDate.new(:jan,1,2012)
+    end
+
+    it "april 3rd, 1999 is fine too" do
+      Parser.date("april 3rd, 1999").
+        should == MyDate.new(:apr,3,1999)
+    end
+
+    it "11th, october, 2001 is cool" do
+      Parser.date("11th, october, 2001").
+        should == MyDate.new(:oct,11,2001)
+    end
   end
 
   context "it also doesn't care about order" do

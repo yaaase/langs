@@ -29,6 +29,7 @@ class Parser
       string.gsub(",","").
         gsub(".","").
         gsub("st","").
+        gsub("rd","").
         gsub("nd","").
         gsub("th","")
     end
