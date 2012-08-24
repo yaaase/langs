@@ -26,7 +26,6 @@ describe MyDate do
       it "days between jan 1 2012 and nov 30 2010 is 397" do
         (MyDate.new(:jan,1,2012) - MyDate.new(:nov,30,2010)).should == 397
       end
-
     end
 
     context "equality" do
@@ -37,7 +36,6 @@ describe MyDate do
       it "knows when dates are not equal" do
         MyDate.new(:feb,3,2012).should_not == MyDate.new(:feb,3,2011)
       end
-
     end
 
     context "order" do
