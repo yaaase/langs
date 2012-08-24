@@ -32,4 +32,19 @@ module MyDateConstants
 
   DAYS_IN_MONTH_LEAP_YEAR = DAYS_IN_MONTH.merge :feb => 29
 
+  PRETTY_MONTHS = {
+    :jan => "January",
+    :feb => "February",
+    :mar => "March",
+    :apr => "April",
+    :may => "May",
+    :jun => "June",
+    :jul => "July",
+    :aug => "August",
+    :sep => "September",
+    :oct => "October",
+    :nov => "November",
+    :dec => "December"
+  }
+
 end

@@ -192,6 +192,18 @@ describe MyDate do
     end
   end
 
+  context "to_s" do
+    it "prints january nicely" do
+      MyDate.new(:jan,1,2012).to_s.
+        should == "January 1, 2012"
+    end
+
+    it "prints october nicely too" do
+      MyDate.new(:oct,20,1982).to_s.
+        should == "October 20, 1982"
+    end
+  end
+
   context "exceptions" do
     context "subtraction" do
       it "will not subtract a lower date from a higher one" do

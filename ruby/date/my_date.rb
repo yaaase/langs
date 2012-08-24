@@ -58,6 +58,10 @@ class MyDate
     end
   end
 
+  def to_s
+    "#{PRETTY_MONTHS[month]} #{day}, #{year}"
+  end
+
   private
 
   def before_leap_day?
