@@ -5,9 +5,9 @@ module MyDateValidations
   private
 
   def validate month, day, year
-    raise unless month_is_valid? month
-    raise unless day_is_valid? day, month, year
-    raise unless year_is_valid? year
+    raise "#{month} is not a valid month" unless month_is_valid? month
+    raise "#{day} in #{month}, #{year} is not a valid day" unless day_is_valid? day, month, year
+    raise "#{year} is not a valid year" unless year_is_valid? year
   end
 
   def month_is_valid? month

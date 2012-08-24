@@ -1,7 +1,6 @@
 require './parser'
 
 describe Parser do
-
   context "month day year without commas" do
     it "January 1 2012 is a valid date object" do
       Parser.date("January 1 2012").
@@ -39,5 +38,4 @@ describe Parser do
         should == MyDate.new(:oct,1,2012)
     end
   end
-
 end

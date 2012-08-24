@@ -37,7 +37,7 @@ class Parser
       if MyDate::MONTH.keys.include? try
         try
       else
-        raise
+        raise "#{month} doesn't seem like a month!"
       end
     end
   end
