@@ -12,6 +12,16 @@ describe Parser do
         to raise_error
     end
 
+    it "1, foo, 1999 raises exception as well" do
+      expect{Parser.date("1, foo ,1999")}.
+        to raise_error
+    end
+
+    it "june 5 2011 is legit" do
+      Parser.date("2011, 5 June").
+        should == MyDate.new(:jun,5,2011)
+    end
+
     it "January 1, 2012 is a valid date object" do
       Parser.date("January 1, 2012").
         should == MyDate.new(:jan,1,2012)
@@ -37,7 +47,7 @@ describe Parser do
     end
   end
 
-  context "integrated subtraction" do
+  context "integrated subtraction test" do
     it "2012, 1 mar - february 1st 2012 is 29" do
       (Parser.date("2012, 1 mar") - Parser.date("february 1st 2012")).
         should == 29
