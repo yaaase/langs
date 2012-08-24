@@ -196,7 +196,7 @@ describe MyDate do
     context "subtraction" do
       it "will not subtract a lower date from a higher one" do
         expect{MyDate.new(:mar,1,2012) - MyDate.new(:apr,1,2012)}.
-          to raise_error
+          to raise_error SubtractionError
       end
     end
 

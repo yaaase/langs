@@ -28,7 +28,7 @@ class MyDate
   end
 
   def - other
-    raise unless self > other
+    raise SubtractionError unless self > other
 
     if year == other.year
       days_between_within_same_year other
@@ -142,5 +142,11 @@ class MyDate
                        num > MONTH[other_month]
     end
     between
+  end
+end
+
+class SubtractionError < Exception
+  def message
+    "Cannot subtract a later date from an earlier one!"
   end
 end
