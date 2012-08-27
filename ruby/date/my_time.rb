@@ -1,5 +1,4 @@
 class MyTime
-  attr_reader :qty, :unit
 
   KEY = {
     :d => 24 * 60 * 60,
@@ -20,7 +19,7 @@ class MyTime
   end
 
   def to_b
-    qty * KEY[unit]
+    @qty * KEY[@unit]
   end
 
 end
