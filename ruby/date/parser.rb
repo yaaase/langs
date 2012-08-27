@@ -25,8 +25,8 @@ class Parser
       [month, day, year]
     end
 
-    def clean string
-      string.gsub(",","").
+    def clean date_string
+      date_string.gsub(",","").
         gsub(".","").
         gsub("st","").
         gsub("rd","").
