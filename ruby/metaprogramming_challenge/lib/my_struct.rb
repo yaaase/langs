@@ -24,7 +24,7 @@ class MyStruct
         unless self.respond_to? val
           raise NameError, "no member '#{val}' in struct"
         else
-          self.send "#{val}"
+          self.send val
         end
       end
 
