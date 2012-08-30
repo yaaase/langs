@@ -3,12 +3,12 @@ class MyStruct
     self.validate *args
 
     klass = Class.new do
+      include Enumerable
+
       @@args = args
       args.each do |a|
         self.class_eval "attr_accessor :#{a}"
       end
-
-      include Enumerable
 
       def initialize *vals
         @@args.each do |arg|
@@ -54,7 +54,7 @@ class MyStruct
       def select &block
         list = []
         self.instance_variables.each do |var|
-          value = self.send "#{var[1..-1]}"
+          value = self.get_value var
           list << value if yield value
         end
         list
@@ -67,7 +67,7 @@ class MyStruct
       def values
         list = []
         self.instance_variables.each do |var|
-          list << self.send("#{var[1..-1]}")
+          list << self.get_value(var)
         end
         list
       end
@@ -75,11 +75,15 @@ class MyStruct
       def each &block
         if block_given?
           self.instance_variables.each do |var|
-            yield self.send("#{var[1..-1]}")
+            yield self.get_value var
           end
         else
           self.values.each
         end
+      end
+
+      def get_value variable
+        self.send("#{variable[1..-1]}")
       end
     end
 
@@ -89,9 +93,7 @@ class MyStruct
   end
 
   def self.validate *args
-    if args.size < 1
-      raise ArgumentError, "wrong number of arguments (0 for 1+)"
-    end
+    raise ArgumentError, "wrong number of arguments (0 for 1+)" unless args[0]
 
     args.each { |a| raise TypeError unless a.class == Symbol }
   end
