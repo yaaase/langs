@@ -39,9 +39,7 @@ class MyStruct
       def inspect
         base_string = "#<struct "
         self.instance_variables.each do |var|
-          method = var[1..-1]
-          value = self.send(method).inspect
-          base_string << "#{method}=#{value}, "
+          base_string << "#{var[1..-1]}=#{self.get_value(var).inspect}, "
         end
         base_string[-2..-1] = ">"
         base_string
@@ -83,7 +81,7 @@ class MyStruct
       end
 
       def get_value variable
-        self.send "#{variable[1..-1]}"
+        self.send variable[1..-1]
       end
     end
 

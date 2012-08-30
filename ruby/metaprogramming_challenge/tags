@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MyStruct	lib/my_struct.rb	/^class MyStruct$/;"	c
+[]	lib/my_struct.rb	/^      def [] val$/;"	f	class:MyStruct.new
+[]=	lib/my_struct.rb	/^      def []= old, new$/;"	f	class:MyStruct.new
+class_meth	spec/my_struct_spec.rb	/^      def self.class_meth() 'class value' end$/;"	F
+each	lib/my_struct.rb	/^      def each &block$/;"	f	class:MyStruct.new
+get_value	lib/my_struct.rb	/^      def get_value variable$/;"	f	class:MyStruct.new
+initialize	lib/my_struct.rb	/^      def initialize *vals$/;"	f	class:MyStruct.new
+inspect	lib/my_struct.rb	/^      def inspect$/;"	f	class:MyStruct.new
+inspect	spec/my_struct_spec.rb	/^        def obj.inspect() 'inspected :)' end$/;"	F
+instance_meth	spec/my_struct_spec.rb	/^      def instance_meth() 'instance value' end$/;"	f
+members	lib/my_struct.rb	/^      def members$/;"	f	class:MyStruct.new
+my_struct.rb	lib/my_struct.rb	1;"	F
+my_struct_spec.rb	spec/my_struct_spec.rb	1;"	F
+new	lib/my_struct.rb	/^  def self.new *args, &block$/;"	F	class:MyStruct
+select	lib/my_struct.rb	/^      def select &block$/;"	f	class:MyStruct.new
+size	lib/my_struct.rb	/^      def size$/;"	f	class:MyStruct.new
+validate	lib/my_struct.rb	/^  def self.validate *args$/;"	F	class:MyStruct
+values	lib/my_struct.rb	/^      def values$/;"	f	class:MyStruct.new
