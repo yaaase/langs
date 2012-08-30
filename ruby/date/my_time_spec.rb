@@ -17,6 +17,10 @@ describe MyTime do
     it "knows that 1 day is 24 hours" do
       MyTime.new(1,:d).should == MyTime.new(24,:h)
     end
+
+    it "knows that 1.5 days is 36 hours" do
+      MyTime.new(1.5,:d).should == MyTime.new(36,:h)
+    end
   end
 
   context "exceptions" do
