@@ -83,7 +83,7 @@ class MyStruct
       end
 
       def get_value variable
-        self.send("#{variable[1..-1]}")
+        self.send "#{variable[1..-1]}"
       end
     end
 
