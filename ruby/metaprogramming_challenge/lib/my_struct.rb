@@ -1,87 +1,87 @@
 class MyStruct
   def self.new *args, &block
-    self.validate *args
+    validate *args
 
     klass = Class.new do
       include Enumerable
 
       @@args = args
       args.each do |a|
-        self.class_eval "attr_accessor :#{a}"
+        class_eval "attr_accessor :#{a}"
       end
 
       def initialize *vals
         @@args.each do |arg|
-          self.instance_variable_set "@#{arg}", nil
+          instance_variable_set "@#{arg}", nil
         end
 
         vals.each_with_index do |val, ind|
-          self.instance_variable_set "@#{@@args[ind]}", val
+          instance_variable_set "@#{@@args[ind]}", val
         end
       end
 
       def [] val
-        unless self.respond_to? val
+        unless respond_to? val
           raise NameError, "no member '#{val}' in struct"
         else
-          self.send val
+          send val
         end
       end
 
       def []= old, new
-        unless self.respond_to? old
+        unless respond_to? old
           raise NameError, "no member '#{old}' in struct"
         else
-          self.instance_variable_set "@#{old}", new
+          instance_variable_set "@#{old}", new
         end
       end
 
       def inspect
         base_string = "#<struct "
-        self.instance_variables.each do |var|
-          base_string << "#{var[1..-1]}=#{self.get_value(var).inspect}, "
+        instance_variables.each do |var|
+          base_string << "#{var[1..-1]}=#{get_value(var).inspect}, "
         end
         base_string[-2..-1] = ">"
         base_string
       end
 
       def members
-        self.instance_variables.map{ |v| v.to_s[1..-1].to_sym }
+        instance_variables.map{ |v| v.to_s[1..-1].to_sym }
       end
 
       def select &block
         list = []
-        self.instance_variables.each do |var|
-          value = self.get_value var
+        instance_variables.each do |var|
+          value = get_value var
           list << value if yield value
         end
         list
       end
 
       def size
-        self.instance_variables.size
+        instance_variables.size
       end
 
       def values
         list = []
-        self.instance_variables.each do |var|
-          list << self.get_value(var)
+        instance_variables.each do |var|
+          list << get_value(var)
         end
         list
       end
 
       def each &block
         if block_given?
-          self.instance_variables.each do |var|
-            yield self.get_value var
+          instance_variables.each do |var|
+            yield get_value var
           end
         else
-          self.values.each
+          values.each
         end
       end
 
       def get_value variable
-        self.send variable[1..-1]
+        send variable[1..-1]
       end
     end
 
