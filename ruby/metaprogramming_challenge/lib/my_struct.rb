@@ -21,19 +21,17 @@ class MyStruct
       end
 
       def [] val
-        unless respond_to? val
-          raise NameError, "no member '#{val}' in struct"
-        else
-          send val
-        end
+        bracket_guard val
+        send val
       end
 
       def []= old, new
-        unless respond_to? old
-          raise NameError, "no member '#{old}' in struct"
-        else
-          instance_variable_set "@#{old}", new
-        end
+        bracket_guard old
+        instance_variable_set "@#{old}", new
+      end
+
+      def bracket_guard val
+        raise NameError, "no member '#{val}' in struct" unless respond_to? val
       end
 
       def inspect
