@@ -46,7 +46,7 @@ class MyDate
     day == other.day
   end
 
-  def leap_year?(yr = @year)
+  def leap_year? yr = @year
     if yr % 400 == 0
       true
     elsif yr % 100 == 0
