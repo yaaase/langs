@@ -3,7 +3,7 @@ require './my_date'
 class Parser
   class << self
     def date date
-      elems = clean(date).split(/\s/)
+      elems = clean(date).split(/\s+/)
       mo, day, yr = determine_parts(elems)
       MyDate.new(parse_month(mo),day.to_i,yr.to_i)
     end
@@ -26,12 +26,12 @@ class Parser
     end
 
     def clean date_string
-      date_string.gsub(",","").
-        gsub(".","").
-        gsub("st","").
-        gsub("rd","").
-        gsub("nd","").
-        gsub("th","")
+      date_string.gsub(","," ").
+        gsub("."," ").
+        gsub("st"," ").
+        gsub("rd"," ").
+        gsub("nd"," ").
+        gsub("th"," ")
     end
 
     def parse_month month
