@@ -61,11 +61,9 @@ class MyStruct
       end
 
       def values
-        list = []
-        instance_variables.each do |var|
-          list << get_value(var)
+        instance_variables.inject([]) do |acc, elem|
+          acc << get_value(elem)
         end
-        list
       end
 
       def each &block
