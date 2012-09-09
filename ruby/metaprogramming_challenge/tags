@@ -7,6 +7,7 @@
 MyStruct	lib/my_struct.rb	/^class MyStruct$/;"	c
 []	lib/my_struct.rb	/^      def [] val$/;"	f	class:MyStruct.new
 []=	lib/my_struct.rb	/^      def []= old, new$/;"	f	class:MyStruct.new
+bracket_guard	lib/my_struct.rb	/^      def bracket_guard val$/;"	f	class:MyStruct.new
 class_meth	spec/my_struct_spec.rb	/^      def self.class_meth() 'class value' end$/;"	F
 each	lib/my_struct.rb	/^      def each &block$/;"	f	class:MyStruct.new
 get_value	lib/my_struct.rb	/^      def get_value variable$/;"	f	class:MyStruct.new
