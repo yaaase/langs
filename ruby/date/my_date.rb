@@ -140,12 +140,12 @@ class MyDate
   end
 
   def months_between other_month
-    between = []
-    MONTH.each_pair do |mo, num|
-      between << mo if MONTH[month] > num &&
-                       num > MONTH[other_month]
+    [].tap do |between|
+      MONTH.each_pair do |mo, num|
+        between << mo if MONTH[month] > num &&
+          num > MONTH[other_month]
+      end
     end
-    between
   end
 end
 
