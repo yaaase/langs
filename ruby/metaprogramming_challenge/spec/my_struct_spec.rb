@@ -1,4 +1,4 @@
-require 'my_struct'
+require_relative '../lib/my_struct'
 
 describe MyStruct, '.new' do
   it 'returns an anonymous class' do
