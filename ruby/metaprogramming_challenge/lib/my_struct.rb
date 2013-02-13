@@ -12,26 +12,26 @@ class MyStruct
 
       def initialize *vals
         @@args.each do |arg|
-          instance_variable_set "@#{arg}", nil
+          instance_variable_set("@#{arg}", nil)
         end
 
         vals.each_with_index do |val, ind|
-          instance_variable_set "@#{@@args[ind]}", val
+          instance_variable_set("@#{@@args[ind]}", val)
         end
       end
 
       def [] val
-        bracket_guard val
-        send val
+        bracket_guard(val)
+        send(val)
       end
 
       def []= old, new
-        bracket_guard old
-        instance_variable_set "@#{old}", new
+        bracket_guard(old)
+        instance_variable_set("@#{old}", new)
       end
 
       def bracket_guard val
-        raise NameError, "no member '#{val}' in struct" unless respond_to? val
+        raise NameError, "no member '#{val}' in struct" unless respond_to?(val)
       end
 
       def inspect
@@ -50,7 +50,7 @@ class MyStruct
       def select &block
         list = []
         instance_variables.each do |var|
-          value = get_value var
+          value = get_value(var)
           list << value if yield value
         end
         list
@@ -69,7 +69,7 @@ class MyStruct
       def each &block
         if block_given?
           instance_variables.each do |var|
-            yield get_value var
+            yield get_value(var)
           end
         else
           values.each
