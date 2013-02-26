@@ -97,6 +97,26 @@ describe Lint do
       l.violation?("def foo bar", 3)
       l.errors.should == [{:missing_parens => 3}]
     end
+
+    it "everything has an error message" do
+      expect do
+        Lint::Violations.values.each do |violation|
+          Lint::Messages[violation].chars
+        end
+        Lint::ExceptionViolations.values.each do |exception_violation|
+          Lint::Messages[exception_violation].chars
+        end
+        Lint::MetaprogrammingViolations.values.each do |metaprogramming_violation|
+          Lint::Messages[metaprogramming_violation].chars
+        end
+      end.to_not raise_error
+    end
+  end
+
+  context "and and or" do
+    it "the word 'and' is banned" do
+      l.violation?("foo and bar").should be_true
+    end
   end
 
   context "#method_missing" do

@@ -4,7 +4,8 @@ class Lint
   Violations = {
     /def (self\.)?\w+ .\w+/ => :missing_parens,
     /.{80}+/                => :line_too_long,
-    /( )+$/                 => :trailing_whitespace
+    /( )+$/                 => :trailing_whitespace,
+    /\band\b/               => :the_word_and
   }
 
   CommentedLine = [
@@ -28,7 +29,8 @@ class Lint
     :eval                   => "Use of eval.",
     :define_method          => "Use of define_method.",
     :dynamic_invocation     => "Dynamic invocation of a method.",
-    :rescue_class_exception => "Rescuing class Exception."
+    :rescue_class_exception => "Rescuing class Exception.",
+    :the_word_and           => "Used 'and'; please use && instead."
   }
 
   def initialize
