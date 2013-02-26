@@ -76,4 +76,8 @@ describe Lint do
   it "ignores comments indented with tabs" do
     l.violation?("\t# def foo bar").should be_false
   end
+
+  it "dynamic method invocation via send" do
+    l.meta_violation?('foo.send "foo_#{:bar}"').should be_true
+  end
 end

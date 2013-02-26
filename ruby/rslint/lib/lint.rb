@@ -8,20 +8,22 @@ class Lint
   }
 
   CommentedLine = [
-    /\s*#/
+    /^\s*#/
   ]
 
   MetaprogrammingViolations = {
-    /\beval/ => :eval,
-    /define_method/ => :define_method
+    /\beval/            => :eval,
+    /define_method/     => :define_method,
+    /\w+\.send.*".*#\{/ => :dynamic_invocation
   }
 
   Messages = {
-    :missing_parens => "You have omitted parentheses from a method definition with parameters.",
-    :line_too_long => "Line length of 80 characters or more.",
+    :missing_parens      => "You have omitted parentheses from a method definition with parameters.",
+    :line_too_long       => "Line length of 80 characters or more.",
     :trailing_whitespace => "Trailing whitespace.",
-    :eval => "Use of eval.",
-    :define_method => "Use of define_method."
+    :eval                => "Use of eval.",
+    :define_method       => "Use of define_method.",
+    :dynamic_invocation  => "Dynamic invocation of a method."
   }
 
   def initialize
