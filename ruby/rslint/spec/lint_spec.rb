@@ -117,6 +117,10 @@ describe Lint do
     it "the word 'and' is banned" do
       l.violation?("foo and bar").should be_true
     end
+
+    it "the word 'or' is also banned" do
+      l.violation?("1 or nil").should be_true
+    end
   end
 
   context "#method_missing" do

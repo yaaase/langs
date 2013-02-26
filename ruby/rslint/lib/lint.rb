@@ -5,7 +5,8 @@ class Lint
     /def (self\.)?\w+ .\w+/ => :missing_parens,
     /.{80}+/                => :line_too_long,
     /( )+$/                 => :trailing_whitespace,
-    /\band\b/               => :the_word_and
+    /\band\b/               => :the_word_and,
+    /\bor\b/                => :the_word_or
   }
 
   CommentedLine = [
@@ -30,7 +31,8 @@ class Lint
     :define_method          => "Use of define_method.",
     :dynamic_invocation     => "Dynamic invocation of a method.",
     :rescue_class_exception => "Rescuing class Exception.",
-    :the_word_and           => "Used 'and'; please use && instead."
+    :the_word_and           => "Used 'and'; please use && instead.",
+    :the_word_or            => "Used 'or'; please use || instead."
   }
 
   def initialize
