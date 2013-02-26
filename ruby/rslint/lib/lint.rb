@@ -3,13 +3,17 @@ class Lint
 
   Violations = {
     /def (self\.)?\w+ .\w+/ => :missing_parens,
-    /.{80}+/               => :line_too_long,
-    /( )+$/                => :trailing_whitespace
+    /.{80}+/                => :line_too_long,
+    /( )+$/                 => :trailing_whitespace
   }
 
   CommentedLine = [
     /^\s*#/
   ]
+
+  ExceptionViolations = {
+    /rescue.*Exception/ => :rescue_class_exception
+  }
 
   MetaprogrammingViolations = {
     /\beval/            => :eval,
@@ -18,12 +22,13 @@ class Lint
   }
 
   Messages = {
-    :missing_parens      => "You have omitted parentheses from a method definition with parameters.",
-    :line_too_long       => "Line length of 80 characters or more.",
-    :trailing_whitespace => "Trailing whitespace.",
-    :eval                => "Use of eval.",
-    :define_method       => "Use of define_method.",
-    :dynamic_invocation  => "Dynamic invocation of a method."
+    :missing_parens         => "You have omitted parentheses from a method definition with parameters.",
+    :line_too_long          => "Line length of 80 characters or more.",
+    :trailing_whitespace    => "Trailing whitespace.",
+    :eval                   => "Use of eval.",
+    :define_method          => "Use of define_method.",
+    :dynamic_invocation     => "Dynamic invocation of a method.",
+    :rescue_class_exception => "Rescuing class Exception."
   }
 
   def initialize
@@ -36,6 +41,10 @@ class Lint
 
   def meta_violation?(line, number = 1)
     abstract_violation?(MetaprogrammingViolations, line, number)
+  end
+
+  def exception_violation?(line, number = 1)
+    abstract_violation?(ExceptionViolations, line, number)
   end
 
   def abstract_violation?(list, line, number)
