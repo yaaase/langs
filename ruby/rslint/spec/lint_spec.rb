@@ -80,4 +80,8 @@ describe Lint do
   it "dynamic method invocation via send is bad, mmkay?" do
     l.meta_violation?('foo.send "foo_#{:bar}"').should be_true
   end
+
+  it "arrays of args too need parens in the method def" do
+    l.violation?("def foo *args").should be_true
+  end
 end

@@ -2,7 +2,7 @@ class Lint
   attr_reader :errors
 
   Violations = {
-    /def (self\.)?\w+ \w+/ => :missing_parens,
+    /def (self\.)?\w+ .\w+/ => :missing_parens,
     /.{80}+/               => :line_too_long,
     /( )+$/                => :trailing_whitespace
   }
