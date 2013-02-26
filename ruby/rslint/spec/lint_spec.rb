@@ -12,6 +12,10 @@ describe Lint do
       l.violation?("def some_method").should be_false
     end
 
+    it "using parens is good" do
+      l.violation?("def foo(bar, baz)").should be_false
+    end
+
     it "acts the same for class methods" do
       l.violation?("def self.something foo, bar").should be_true
     end
