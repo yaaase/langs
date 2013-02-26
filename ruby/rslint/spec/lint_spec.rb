@@ -36,6 +36,16 @@ describe Lint do
       l.violation?("def foo *args").should be_true
     end
 
+    context "and and or" do
+      it "the word 'and' is banned" do
+        l.violation?("foo and bar").should be_true
+      end
+
+      it "the word 'or' is also banned" do
+        l.violation?("1 or nil").should be_true
+      end
+    end
+
     context "comments" do
       it "ignores comments" do
         l.violation?("# a comment").should be_false
@@ -110,16 +120,6 @@ describe Lint do
           Lint::Messages.fetch(metaprogramming_violation)
         end
       end.to_not raise_error
-    end
-  end
-
-  context "and and or" do
-    it "the word 'and' is banned" do
-      l.violation?("foo and bar").should be_true
-    end
-
-    it "the word 'or' is also banned" do
-      l.violation?("1 or nil").should be_true
     end
   end
 
