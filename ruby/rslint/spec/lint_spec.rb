@@ -73,6 +73,10 @@ describe Lint do
     it "rescuing Exception is bad" do
       l.exception_violation?("rescue Exception").should be_true
     end
+
+    it "rescuing nothing is the same as rescuing Exception" do
+      l.exception_violation?("rescue    ").should be_true
+    end
   end
 
   context "error messages" do

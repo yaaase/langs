@@ -12,7 +12,7 @@ class Lint
   ]
 
   ExceptionViolations = {
-    /rescue.*Exception/ => :rescue_class_exception
+    /rescue\s*(Exception)?$/ => :rescue_class_exception
   }
 
   MetaprogrammingViolations = {
