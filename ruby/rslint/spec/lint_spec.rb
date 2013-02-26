@@ -15,7 +15,7 @@ describe Lint do
     l.violation?("def self.something foo, bar").should be_true
   end
 
-  it "no parens for class methods without args" do
+  it "no parens for class methods without args is fine too" do
     l.violation?("def self.something").should be_false
   end
 
@@ -77,7 +77,7 @@ describe Lint do
     l.violation?("\t# def foo bar").should be_false
   end
 
-  it "dynamic method invocation via send" do
+  it "dynamic method invocation via send is bad, mmkay?" do
     l.meta_violation?('foo.send "foo_#{:bar}"').should be_true
   end
 end
