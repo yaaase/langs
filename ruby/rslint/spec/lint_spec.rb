@@ -94,22 +94,14 @@ describe Lint do
   end
 
   context "error messages" do
-    it "knows why it dislikes them too" do
-      l.line_too_long.should == "Line length of 80 characters or more."
-    end
-
-    it "has methods with text explaining what is bad" do
-      l.missing_parens.should == "You have omitted parentheses from a method definition with parameters."
-    end
-
     it "keeps track of your mistakes and their lines, defaulting to line #1" do
       l.violation?("def foo bar")
-      l.errors.should == [{:missing_parens => 1}]
+      l.errors.first.values.should == [1]
     end
 
     it "knows what line number you fucked up on" do
       l.violation?("def foo bar", 3)
-      l.errors.should == [{:missing_parens => 3}]
+      l.errors.first.values.should == [3]
     end
 
     it "everything has an error message" do
