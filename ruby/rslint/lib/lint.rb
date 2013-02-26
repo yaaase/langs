@@ -9,10 +9,6 @@ class Lint
     /\bor\b/                => :the_word_or
   }
 
-  CommentedLine = [
-    /^\s*#/
-  ]
-
   ExceptionViolations = {
     /rescue\s*(Exception)?$/ => :rescue_class_exception
   }
@@ -22,6 +18,10 @@ class Lint
     /define_method/     => :define_method,
     /\w+\.send.*".*#\{/ => :dynamic_invocation
   }
+
+  CommentedLine = [
+    /^\s*#/
+  ]
 
   Messages = {
     :missing_parens         => "You have omitted parentheses from a method definition with parameters.",
