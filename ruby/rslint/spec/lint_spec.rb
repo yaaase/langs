@@ -101,13 +101,13 @@ describe Lint do
     it "everything has an error message" do
       expect do
         Lint::Violations.values.each do |violation|
-          Lint::Messages[violation].chars
+          Lint::Messages.fetch(violation)
         end
         Lint::ExceptionViolations.values.each do |exception_violation|
-          Lint::Messages[exception_violation].chars
+          Lint::Messages.fetch(exception_violation)
         end
         Lint::MetaprogrammingViolations.values.each do |metaprogramming_violation|
-          Lint::Messages[metaprogramming_violation].chars
+          Lint::Messages.fetch(metaprogramming_violation)
         end
       end.to_not raise_error
     end
