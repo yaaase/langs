@@ -3,11 +3,11 @@ class Lint
 
   Violations = {
     /def (self\.)?\w+[!?]? .\w+/ => :missing_parens,
-    /.{80}+/                => :line_too_long,
-    /( )+$/                 => :trailing_whitespace,
-    /\band\b/               => :the_word_and,
-    /\bor\b/                => :the_word_or,
-    /\bfor\b/               => :the_word_for
+    /.{80}+/                     => :line_too_long,
+    /( )+$/                      => :trailing_whitespace,
+    /\band\b/                    => :the_word_and,
+    /\bor\b/                     => :the_word_or,
+    /\bfor\b/                    => :the_word_for
   }
 
   ExceptionViolations = {
