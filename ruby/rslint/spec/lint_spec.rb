@@ -4,88 +4,94 @@ describe Lint do
   let(:l) { Lint.new }
 
   context "#violation?" do
-    it "wants parens around method definitions with args" do
-      l.violation?("def foo bar, baz").should be_true
+    context "missing_parens" do
+      it "wants parens around method definitions with args" do
+        l.violation?("def foo bar, baz").should be_true
+      end
+
+      it "does not need parens for methods with no args" do
+        l.violation?("def some_method").should be_false
+      end
+
+      it "using parens is good" do
+        l.violation?("def foo(bar, baz)").should be_false
+      end
+
+      it "using parens for methods with bang is the same" do
+        l.violation?("def foo!").should be_false
+      end
+
+      it "a bang method with args needs parens too" do
+        l.violation?("def foo! bar").should be_true
+      end
+
+      it "a question mark method without args is fine" do
+        l.violation?("def foo?").should be_false
+      end
+
+      it "a question mark method with args needs parens" do
+        l.violation?("def foo? bar").should be_true
+      end
+
+      it "class methods with bang+no args are fine" do
+        l.violation?("def self.foo!").should be_false
+      end
+
+      it "class methods with bang+args need parens" do
+        l.violation?("def self.foo! bar").should be_true
+      end
+
+      it "class methods with qmark+no args are fine" do
+        l.violation?("def self.foo?").should be_false
+      end
+
+      it "class methods with qmark+args need parens" do
+        l.violation?("def self.foo? bar").should be_true
+      end
+
+      it "positive case for bang" do
+        l.violation?("def foo!(bar)").should be_false
+      end
+
+      it "positive case for class method bang" do
+        l.violation?("def self.foo!(bar)").should be_false
+      end
+
+      it "positive case for qmark" do
+        l.violation?("def foo?(bar)").should be_false
+      end
+
+      it "positive case for class method qmark" do
+        l.violation?("def self.foo?(bar)").should be_false
+      end
+
+      it "acts the same for class methods" do
+        l.violation?("def self.something foo, bar").should be_true
+      end
+
+      it "no parens for class methods without args is fine too" do
+        l.violation?("def self.something").should be_false
+      end
+
+      it "arrays of args too need parens in the method def" do
+        l.violation?("def foo *args").should be_true
+      end
     end
 
-    it "does not need parens for methods with no args" do
-      l.violation?("def some_method").should be_false
+    context "line_too_long" do
+      it "dislikes lines of >= 80 chars" do
+        l.violation?("#{'a' * 80}").should be_true
+      end
     end
 
-    it "using parens is good" do
-      l.violation?("def foo(bar, baz)").should be_false
-    end
+    context "trailing_whitespace" do
+      it "whitespace at the end of the line is a no-no" do
+        l.violation?("def foo(bar) ").should be_true
+      end
 
-    it "using parens for methods with bang is the same" do
-      l.violation?("def foo!").should be_false
-    end
-
-    it "a bang method with args needs parens too" do
-      l.violation?("def foo! bar").should be_true
-    end
-
-    it "a question mark method without args is fine" do
-      l.violation?("def foo?").should be_false
-    end
-
-    it "a question mark method with args needs parens" do
-      l.violation?("def foo? bar").should be_true
-    end
-
-    it "class methods with bang+no args are fine" do
-      l.violation?("def self.foo!").should be_false
-    end
-
-    it "class methods with bang+args need parens" do
-      l.violation?("def self.foo! bar").should be_true
-    end
-
-    it "class methods with qmark+no args are fine" do
-      l.violation?("def self.foo?").should be_false
-    end
-
-    it "class methods with qmark+args need parens" do
-      l.violation?("def self.foo? bar").should be_true
-    end
-
-    it "positive case for bang" do
-      l.violation?("def foo!(bar)").should be_false
-    end
-
-    it "positive case for class method bang" do
-      l.violation?("def self.foo!(bar)").should be_false
-    end
-
-    it "positive case for qmark" do
-      l.violation?("def foo?(bar)").should be_false
-    end
-
-    it "positive case for class method qmark" do
-      l.violation?("def self.foo?(bar)").should be_false
-    end
-
-    it "acts the same for class methods" do
-      l.violation?("def self.something foo, bar").should be_true
-    end
-
-    it "no parens for class methods without args is fine too" do
-      l.violation?("def self.something").should be_false
-    end
-
-    it "dislikes lines of >= 80 chars" do
-      l.violation?("#{'a' * 80}").should be_true
-    end
-
-    it "whitespace at the end of the line is a no-no" do
-      l.violation?("def foo(bar) ").should be_true
-    end
-
-    it "a newline is ok by itself" do
-      l.violation?("\n").should be_false
-    end
-
-    it "arrays of args too need parens in the method def" do
-      l.violation?("def foo *args").should be_true
+      it "a newline is ok by itself" do
+        l.violation?("\n").should be_false
+      end
     end
 
     context "and and or" do
