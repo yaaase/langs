@@ -113,6 +113,10 @@ describe Lint do
         l.violation?("# def foo bar").should be_false
       end
 
+      it "does not care what violation the comment breaks" do
+        l.violation?("# and or def foo bar, baz").should be_false
+      end
+
       it "ignores indented comments" do
         l.violation?(" # def foo bar").should be_false
       end
