@@ -6,7 +6,8 @@ class Lint
     /.{80}+/                => :line_too_long,
     /( )+$/                 => :trailing_whitespace,
     /\band\b/               => :the_word_and,
-    /\bor\b/                => :the_word_or
+    /\bor\b/                => :the_word_or,
+    /\bfor\b/               => :the_word_for
   }
 
   ExceptionViolations = {
@@ -32,7 +33,8 @@ class Lint
     :dynamic_invocation     => "Dynamic invocation of a method.",
     :rescue_class_exception => "Rescuing class Exception.",
     :the_word_and           => "Used 'and'; please use && instead.",
-    :the_word_or            => "Used 'or'; please use || instead."
+    :the_word_or            => "Used 'or'; please use || instead.",
+    :the_word_for           => "Use 'for'; please use an enumerator, or else explain yourself adequately to the team."
   }
 
   def initialize

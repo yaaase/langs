@@ -104,6 +104,12 @@ describe Lint do
       end
     end
 
+    context "for loops" do
+      it "generally you should not use for loops" do
+        l.violation?("for x in list do").should be_true
+      end
+    end
+
     context "comments" do
       it "ignores comments" do
         l.violation?("# a comment").should be_false
