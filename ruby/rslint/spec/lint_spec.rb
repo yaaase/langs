@@ -16,6 +16,54 @@ describe Lint do
       l.violation?("def foo(bar, baz)").should be_false
     end
 
+    it "using parens for methods with bang is the same" do
+      l.violation?("def foo!").should be_false
+    end
+
+    it "a bang method with args needs parens too" do
+      l.violation?("def foo! bar").should be_true
+    end
+
+    it "a question mark method without args is fine" do
+      l.violation?("def foo?").should be_false
+    end
+
+    it "a question mark method with args needs parens" do
+      l.violation?("def foo? bar").should be_true
+    end
+
+    it "class methods with bang+no args are fine" do
+      l.violation?("def self.foo!").should be_false
+    end
+
+    it "class methods with bang+args need parens" do
+      l.violation?("def self.foo! bar").should be_true
+    end
+
+    it "class methods with qmark+no args are fine" do
+      l.violation?("def self.foo?").should be_false
+    end
+
+    it "class methods with qmark+args need parens" do
+      l.violation?("def self.foo? bar").should be_true
+    end
+
+    it "positive case for bang" do
+      l.violation?("def foo!(bar)").should be_false
+    end
+
+    it "positive case for class method bang" do
+      l.violation?("def self.foo!(bar)").should be_false
+    end
+
+    it "positive case for qmark" do
+      l.violation?("def foo?(bar)").should be_false
+    end
+
+    it "positive case for class method qmark" do
+      l.violation?("def self.foo?(bar)").should be_false
+    end
+
     it "acts the same for class methods" do
       l.violation?("def self.something foo, bar").should be_true
     end
