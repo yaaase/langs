@@ -68,11 +68,11 @@ class Lint
   end
   private :abstract_violation?
 
-  def method_missing(method, *args, &block)
-    if Messages.keys.include?(method.to_sym)
-      Messages[method]
+  def method_missing(method_name, *args, &block)
+    if Messages.keys.include?(method_name.to_sym)
+      Messages[method_name]
     else
-      super(method, *args, &block)
+      super(method_name, *args, &block)
     end
   end
 
