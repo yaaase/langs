@@ -22,6 +22,13 @@ class SteepAndCheapScraper
     /tele.*boot/,
   ]
 
+  def go!
+    loop do
+      scrape!
+      sleep(300)
+    end
+  end
+
   def scrape!
     title = scrape_title
     if match?(title) && title != @previous_title
@@ -48,4 +55,6 @@ class SteepAndCheapScraper
   end
 end
 
-SteepAndCheapScraper.new.scrape!
+if ARGV[0] == "start"
+  SteepAndCheapScraper.new.go!
+end
