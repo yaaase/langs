@@ -27,4 +27,12 @@ describe SteepAndCheapScraper do
       s.scrape!
     end
   end
+
+  context "exclusions" do
+    it "can exclude certain things, like gender specific items" do
+      s.stub(:scrape_title).and_return("Mountain Hardwear Women's Thing")
+      s.should_not_receive(:mail!)
+      s.scrape!
+    end
+  end
 end

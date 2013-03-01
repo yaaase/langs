@@ -22,6 +22,10 @@ class SteepAndCheapScraper
     /\btele.*boot\s?\b/,
   ]
 
+  Exclusions = [
+    /women/
+  ]
+
   def go!
     loop do
       scrape!
@@ -31,7 +35,7 @@ class SteepAndCheapScraper
 
   def scrape!
     title = "#{scrape_title} http://www.steepandcheap.com/"
-    if match?(title) && title != @previous_title
+    if match?(title) && title != @previous_title && !exclusion?(title)
       mail!(title)
     end
     @previous_title = title
@@ -41,8 +45,16 @@ class SteepAndCheapScraper
     %x(curl www.steepandcheap.com 2>/dev/null | grep -E "<title>" | sed -e "s_<title>__g" -e "s_</title>__g")
   end
 
+  def exclusion?(string)
+    regexp_match?(Exclusions, string)
+  end
+
   def match?(string)
-    DesiredMatches.each do |regexp|
+    regexp_match?(DesiredMatches, string)
+  end
+
+  def regexp_match?(list, string)
+    list.each do |regexp|
       return true if string.downcase =~ regexp
     end
     return false
