@@ -24,9 +24,10 @@ class SteepAndCheapScraper
 
   def scrape!
     title = scrape_title
-    if match?(title)
+    if match?(title) && title != @previous_title
       mail!(title)
     end
+    @previous_title = title
   end
 
   def scrape_title
