@@ -23,7 +23,7 @@ describe SteepAndCheapScraper do
     it "does not spam me if the match is the same as before" do
       s.stub(:scrape_title).and_return("Black Diamond Verdict Ski")
       s.instance_variable_set(:@previous_title, "Black Diamond Verdict Ski http://www.steepandcheap.com/")
-      s.should_not_receive(:mail!).with("Black Diamond Verdict Ski")
+      s.should_not_receive(:mail!)
       s.scrape!
     end
   end
