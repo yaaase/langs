@@ -30,8 +30,7 @@ class SteepAndCheapScraper
   end
 
   def scrape!
-    title = scrape_title
-    title = "#{title} http://www.steepandcheap.com/"
+    title = "#{scrape_title} http://www.steepandcheap.com/"
     if match?(title) && title != @previous_title
       mail!(title)
     end
