@@ -37,4 +37,11 @@ describe SteepAndCheapScraper do
       s.scrape!
     end
   end
+
+  context "parse_title" do
+    it "parses the title correctly" do
+      site = "<html>\n<title>Title</title>\n<div>Some crap</div>\n\n</html>"
+      s.parse_title(site).should == "Title"
+    end
+  end
 end
