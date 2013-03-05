@@ -11,6 +11,8 @@ describe SteepAndCheapScraper do
     it { s.match?("snow pant").should be_true }
 
     it { s.match?("mountain hardwear").should be_true }
+
+    it { s.match?("climbing skins").should be_true }
   end
 
   context "remembering the title" do

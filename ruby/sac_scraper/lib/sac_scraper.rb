@@ -21,6 +21,7 @@ class SteepAndCheapScraper
     /\bhammerhead\b/,
     /\btele.*bindings?\b/,
     /\btele.*boot\s?\b/,
+    /\bskins\b/
   ]
 
   Exclusions = [
