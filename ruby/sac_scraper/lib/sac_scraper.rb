@@ -47,14 +47,17 @@ class SteepAndCheapScraper
 
   def scrape_title
     site = Net::HTTP.get("www.steepandcheap.com", "/")
+    parse_title(site)
+  end
 
-    title_line = site.split(/\n/).select do |line|
+  def parse_title(string)
+    title_line = string.split(/\n/).select do |line|
       line =~ /<title>/
     end.first.chomp
 
-    title_line.gsub(/.*<title>/,'').
-               gsub(/<\/title>/,'').
-               gsub(/Steep and Cheap: /,'')
+    title_line.gsub(/.*<title>/, '').
+               gsub(/<\/title>/, '').
+               gsub(/Steep and Cheap: /, '')
   end
 
   def exclusion?(string)
