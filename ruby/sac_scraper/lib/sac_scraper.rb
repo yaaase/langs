@@ -25,7 +25,8 @@ class SteepAndCheapScraper
   ]
 
   Exclusions = [
-    /women/
+    /women/,
+    /headlamp/
   ]
 
   def go!
