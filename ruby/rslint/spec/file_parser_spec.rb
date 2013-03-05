@@ -23,7 +23,7 @@ describe FileParser do
     end
 
     it "knows when something has failed" do
-      puts @f.violations?
+      @f.violations?.should be_true
     end
   end
 end
