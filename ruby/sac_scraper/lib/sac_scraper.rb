@@ -33,7 +33,7 @@ class SteepAndCheapScraper
   def go!
     loop do
       scrape!
-      sleep(300)
+      sleep(5 * 60)
     end
   end
 
