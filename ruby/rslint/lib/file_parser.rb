@@ -31,7 +31,7 @@ class FileParser
     @lint.errors.each do |hash|
       error = hash.keys.first
       line_number = hash.values.first
-      puts "#{@lint.send(error)} on line #{line_number}"
+      puts "Line #{line_number}: #{@lint.send(error)}"
     end
   end
 end
