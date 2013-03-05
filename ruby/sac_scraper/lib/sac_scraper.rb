@@ -1,4 +1,5 @@
 require 'net/smtp'
+require 'net/http'
 
 class SteepAndCheapScraper
   DesiredMatches = [
@@ -45,7 +46,15 @@ class SteepAndCheapScraper
   end
 
   def scrape_title
-    %x(curl www.steepandcheap.com 2>/dev/null | grep -E "<title>" | sed -e "s_<title>__g" -e "s_</title>__g" -e "s_Steep and Cheap: __g")
+    site = Net::HTTP.get("www.steepandcheap.com", "/")
+
+    title_line = site.split(/\n/).select do |line|
+      line =~ /<title>/
+    end.first.chomp
+
+    title_line.gsub(/.*<title>/,'').
+               gsub(/<\/title>/,'').
+               gsub(/Steep and Cheap: /,'')
   end
 
   def exclusion?(string)
