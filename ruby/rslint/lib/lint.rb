@@ -7,7 +7,8 @@ class Lint
     /( )+$/                      => :trailing_whitespace,
     /\band\b/                    => :the_word_and,
     /\bor\b/                     => :the_word_or,
-    /\bfor\b/                    => :the_word_for
+    /\bfor\b/                    => :the_word_for,
+    /if.*then\n/                 => :multiline_if_then
   }
 
   ExceptionViolations = {
@@ -34,7 +35,8 @@ class Lint
     :rescue_class_exception => "Rescuing class Exception.",
     :the_word_and           => "Used 'and'; please use && instead.",
     :the_word_or            => "Used 'or'; please use || instead.",
-    :the_word_for           => "Used 'for'; please use an enumerator, or else explain yourself adequately to the team."
+    :the_word_for           => "Used 'for'; please use an enumerator, or else explain yourself adequately to the team.",
+    :multiline_if_then      => "Use of 'then' on a multiline if statement."
   }
 
   def initialize

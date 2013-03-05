@@ -110,6 +110,16 @@ describe Lint do
       end
     end
 
+    context "multiline if then" do
+      it "should not use then in multiline if" do
+        l.violation?("if foo then\nbar\nend").should be_true
+      end
+
+      it "single line if then end is ok" do
+        l.violation?("if true then false end").should be_false
+      end
+    end
+
     context "comments" do
       it "ignores comments" do
         l.violation?("# a comment").should be_false
