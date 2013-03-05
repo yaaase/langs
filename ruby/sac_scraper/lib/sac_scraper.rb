@@ -45,7 +45,7 @@ class SteepAndCheapScraper
   end
 
   def scrape_title
-    %x(curl www.steepandcheap.com 2>/dev/null | grep -E "<title>" | sed -e "s_<title>__g" -e "s_</title>__g")
+    %x(curl www.steepandcheap.com 2>/dev/null | grep -E "<title>" | sed -e "s_<title>__g" -e "s_</title>__g" -e "s_Steep and Cheap: __g")
   end
 
   def exclusion?(string)
