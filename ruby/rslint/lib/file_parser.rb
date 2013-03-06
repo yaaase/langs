@@ -13,10 +13,12 @@ class FileParser
     end
   end
 
-  def violations?
+  def violations?(meta = false)
     @lines.each do |array|
-      @lint.line_too_long_violation?(array[0], array[1])
-      @lint.violation?(array[0], array[1])
+      line, number = array
+      @lint.line_too_long_violation?(line, number)
+      @lint.violation?(line, number)
+      @lint.meta_violation?(line, number) if meta
     end
 
     if @lint.errors.any?

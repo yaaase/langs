@@ -37,4 +37,16 @@ describe FileParser do
       @f.violations?.should be_false
     end
   end
+
+  context "sample_fail2" do
+    before(:each) do
+      @string = "/home/mark/langs/ruby/rslint/txt/sample_fail2.rb"
+      @f = FileParser.new(@string, Lint.new)
+    end
+
+    it "knows when something has failed" do
+      @f.violations?(meta = true).should be_true
+    end
+  end
+
 end
