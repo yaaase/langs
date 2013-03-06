@@ -1,5 +1,6 @@
 class Lint
   attr_reader :errors
+
   LineTooLongViolations = {
     /.{80}+/                     => :line_too_long
   }
