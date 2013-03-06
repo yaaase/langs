@@ -110,6 +110,16 @@ describe Lint do
       end
     end
 
+    context "space after commas" do
+      it "should have a space after a comma" do
+        l.violation?("[1,2,3]").should be_true
+      end
+
+      it "can also pass..." do
+        l.violation?("[1, 2, 3]").should be_false
+      end
+    end
+
     context "line_too_long" do
       it "dislikes lines of >= 80 chars" do
       l.line_too_long_violation?("#{'a' * 80}").should be_true

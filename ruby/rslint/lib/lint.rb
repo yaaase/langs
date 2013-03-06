@@ -11,10 +11,11 @@ class Lint
     /\band\b/                    => :the_word_and,
     /\bor\b/                     => :the_word_or,
     /\bfor\b/                    => :the_word_for,
-    /if.*then\n/                 => :multiline_if_then,
+    /\bif\b.*\bthen\b\n/         => :multiline_if_then,
     /\(\s|\s\)/                  => :paren_spacing,
     /\[\s|\s\]/                  => :bracket_spacing,
-    /[^\s][{}]|{[^\s]/           => :brace_spacing
+    /[^\s][{}]|{[^\s]/           => :brace_spacing,
+    /,[^\s]/                     => :comma_spacing
   }
 
   ExceptionViolations = {
@@ -51,7 +52,8 @@ class Lint
     :instance_eval          => "Use of instance_eval.",
     :paren_spacing          => "Space after ( or before ).",
     :bracket_spacing        => "Space after [ or before ].",
-    :brace_spacing          => "No space around { or before }."
+    :brace_spacing          => "No space around { or before }.",
+    :comma_spacing          => "No space after a comma."
   }
 
   def initialize
