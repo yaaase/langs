@@ -1,9 +1,11 @@
 class Lint
   attr_reader :errors
+  LineTooLongViolations = {
+    /.{80}+/                     => :line_too_long
+  }
 
   Violations = {
     /def (self\.)?\w+[!?]? .\w+/ => :missing_parens,
-    /.{80}+/                     => :line_too_long,
     /( )+$/                      => :trailing_whitespace,
     /\band\b/                    => :the_word_and,
     /\bor\b/                     => :the_word_or,
@@ -41,6 +43,10 @@ class Lint
 
   def initialize
     @errors = []
+  end
+
+  def line_too_long_violation?(line, number = 1)
+    abstract_violation?(LineTooLongViolations, line, number)
   end
 
   def violation?(line, number = 1)

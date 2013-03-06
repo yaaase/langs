@@ -80,7 +80,7 @@ describe Lint do
 
     context "line_too_long" do
       it "dislikes lines of >= 80 chars" do
-        l.violation?("#{'a' * 80}").should be_true
+        l.line_too_long_violation?("#{'a' * 80}").should be_true
       end
     end
 
