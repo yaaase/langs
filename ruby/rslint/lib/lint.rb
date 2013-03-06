@@ -23,11 +23,11 @@ class Lint
   }
 
   MetaprogrammingViolations = {
-    /\beval\b/          => :eval,
-    /\bclass_eval\b/    => :class_eval,
-    /\bmodule_eval\b/   => :module_eval,
-    /\binstance_eval\b/ => :instance_eval,
-    /define_method/     => :define_method,
+    /\beval\b/          => :used_eval,
+    /\bclass_eval\b/    => :used_class_eval,
+    /\bmodule_eval\b/   => :used_module_eval,
+    /\binstance_eval\b/ => :used_instance_eval,
+    /define_method/     => :used_define_method,
     /\w+\.send.*".*#\{/ => :dynamic_invocation
   }
 
@@ -39,17 +39,17 @@ class Lint
     :missing_parens         => "You have omitted parentheses from a method definition with parameters.",
     :line_too_long          => "Line length of 80 characters or more.",
     :trailing_whitespace    => "Trailing whitespace.",
-    :eval                   => "Use of eval.",
-    :define_method          => "Use of define_method.",
+    :used_eval              => "Use of eval.",
+    :used_define_method     => "Use of define_method.",
     :dynamic_invocation     => "Dynamic invocation of a method.",
     :rescue_class_exception => "Rescuing class Exception.",
     :the_word_and           => "Used 'and'; please use && instead.",
     :the_word_or            => "Used 'or'; please use || instead.",
     :the_word_for           => "Used 'for'; please use an enumerator, or else explain yourself adequately to the team.",
     :multiline_if_then      => "Use of 'then' on a multiline if statement.",
-    :class_eval             => "Use of class_eval.",
-    :module_eval            => "Use of module_eval.",
-    :instance_eval          => "Use of instance_eval.",
+    :used_class_eval        => "Use of class_eval.",
+    :used_module_eval       => "Use of module_eval.",
+    :used_instance_eval     => "Use of instance_eval.",
     :paren_spacing          => "Space after ( or before ).",
     :bracket_spacing        => "Space after [ or before ].",
     :brace_spacing          => "No space around { or before }.",
