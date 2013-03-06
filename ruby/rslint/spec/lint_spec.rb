@@ -167,6 +167,16 @@ describe Lint do
     end
   end
 
+  context "string stripping" do
+    it "removes strings so it doesn't break on them" do
+      l.stripped_of_strings("def foo(\"bar\")").should == "def foo(\"\")"
+    end
+
+    it "does the same with single-quoted strings" do
+      l.stripped_of_strings("def foo('bar')").should == "def foo('')"
+    end
+  end
+
   context "error messages" do
     it "keeps track of your mistakes and their lines, defaulting to line #1" do
       l.violation?("def foo bar")

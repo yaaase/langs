@@ -15,6 +15,7 @@ class FileParser
 
   def violations?
     @lines.each do |array|
+      @lint.line_too_long_violation?(array[0], array[1])
       @lint.violation?(array[0], array[1])
     end
 

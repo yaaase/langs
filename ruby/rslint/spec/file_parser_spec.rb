@@ -1,7 +1,7 @@
 require_relative '../lib/file_parser'
 
 describe FileParser do
-  context "pass" do
+  context "sample_1" do
     before(:each) do
       @string = "/home/mark/langs/ruby/rslint/txt/sample_1.rb"
       @f = FileParser.new(@string, Lint.new)
@@ -16,7 +16,7 @@ describe FileParser do
     end
   end
 
-  context "fail" do
+  context "sample_fail" do
     before(:each) do
       @string = "/home/mark/langs/ruby/rslint/txt/sample_fail.rb"
       @f = FileParser.new(@string, Lint.new)
@@ -24,6 +24,17 @@ describe FileParser do
 
     it "knows when something has failed" do
       @f.violations?.should be_true
+    end
+  end
+
+  context "sample_pass2" do
+    before(:each) do
+      @string = "/home/mark/langs/ruby/rslint/txt/sample_pass2.rb"
+      @f = FileParser.new(@string, Lint.new)
+    end
+
+    it "doesn't break when shit appears in strings" do
+      @f.violations?.should be_false
     end
   end
 end

@@ -50,6 +50,7 @@ class Lint
   end
 
   def violation?(line, number = 1)
+    line = stripped_of_strings(line)
     abstract_violation?(Violations, line, number)
   end
 
@@ -75,6 +76,10 @@ class Lint
     return false
   end
   private :abstract_violation?
+
+  def stripped_of_strings(line)
+    line.gsub(/".*"/, '""').gsub(/'.*'/, "''")
+  end
 
   def method_missing(method_name, *args, &block)
     if Messages.keys.include?(method_name.to_sym)
