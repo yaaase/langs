@@ -155,6 +155,18 @@ describe Lint do
     it "dynamic method invocation via send is bad, mmkay?" do
       l.meta_violation?('foo.send "foo_#{:bar}"').should be_true
     end
+
+    it "class eval, why not?" do
+      l.meta_violation?("class_eval &block").should be_true
+    end
+
+    it "module eval is also naughty" do
+      l.meta_violation?("module_eval foo").should be_true
+    end
+
+    it "and even instance eval!" do
+      l.meta_violation?("instance_eval &block").should be_true
+    end
   end
 
   context "#exception_violation?" do

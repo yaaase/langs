@@ -19,7 +19,10 @@ class Lint
   }
 
   MetaprogrammingViolations = {
-    /\beval/            => :eval,
+    /\beval\b/          => :eval,
+    /\bclass_eval\b/    => :class_eval,
+    /\bmodule_eval\b/   => :module_eval,
+    /\binstance_eval\b/ => :instance_eval,
     /define_method/     => :define_method,
     /\w+\.send.*".*#\{/ => :dynamic_invocation
   }
@@ -39,7 +42,10 @@ class Lint
     :the_word_and           => "Used 'and'; please use && instead.",
     :the_word_or            => "Used 'or'; please use || instead.",
     :the_word_for           => "Used 'for'; please use an enumerator, or else explain yourself adequately to the team.",
-    :multiline_if_then      => "Use of 'then' on a multiline if statement."
+    :multiline_if_then      => "Use of 'then' on a multiline if statement.",
+    :class_eval             => "Use of class_eval.",
+    :module_eval            => "Use of module_eval.",
+    :instance_eval          => "Use of instance_eval."
   }
 
   def initialize
