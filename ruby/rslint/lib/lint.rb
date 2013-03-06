@@ -15,7 +15,7 @@ class Lint
     /\(\s|\s\)/                  => :paren_spacing,
     /\[\s|\s\]/                  => :bracket_spacing,
     /[^\s][{}]|{[^\s]/           => :brace_spacing,
-    /,[^\s]/                     => :comma_spacing
+    /,[^ \n]/                    => :comma_spacing
   }
 
   ExceptionViolations = {

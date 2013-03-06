@@ -118,6 +118,10 @@ describe Lint do
       it "can also pass..." do
         l.violation?("[1, 2, 3]").should be_false
       end
+
+      it "newline after a comma is fine" do
+        l.violation?(":a => 1,\n").should be_false
+      end
     end
 
     context "line_too_long" do
