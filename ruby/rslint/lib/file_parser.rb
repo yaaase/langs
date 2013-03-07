@@ -42,5 +42,5 @@ end
 
 if ARGV[0] == 'check' && ARGV[1]
   meta = ARGV.include?("-m")
-  FileParser.new(ARGV[1], Lint.new).violations?(meta)
+  FileParser.new(ARGV[-1], Lint.new).violations?(meta)
 end
