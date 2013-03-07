@@ -229,6 +229,10 @@ context "#exception_violation?" do
   it "rescuing nothing is the same as rescuing Exception" do
     l.exception_violation?("rescue    ").should be_true
   end
+
+  it "rescuing an exception that ends with Exception is ok" do
+    l.violation?("rescue MyCustomException").should be_false
+  end
 end
 
 context "string stripping" do
