@@ -189,8 +189,8 @@ describe Lint do
       l.violation?(" # def foo bar").should be_false
     end
 
-    it "ignores comments indented with tabs" do
-      l.violation?("\t# def foo bar").should be_false
+    it "ignores comments indented with soft tabs" do
+      l.violation?("  # def foo bar").should be_false
     end
   end
 end
