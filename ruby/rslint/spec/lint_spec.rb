@@ -78,6 +78,12 @@ describe Lint do
       end
     end
 
+    context "soft tabs" do
+      it "don't use actual tabs" do
+        l.violation?("\t").should be_true
+      end
+    end
+
     context "space after open paren/bracket or before close paren/bracket" do
       it "space after open paren is bad" do
         l.violation?("def foo( bar)").should be_true
