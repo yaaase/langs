@@ -40,7 +40,7 @@ class FileParser
   end
 end
 
-if ARGV[0] == 'check' && ARGV[1]
+if ARGV[0] == 'check' && ARGV[-1] =~ /\.rb/
   meta = ARGV.include?("-m")
   FileParser.new(ARGV[-1], Lint.new).violations?(meta)
 end
