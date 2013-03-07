@@ -28,7 +28,7 @@ class Lint
     /\bclass_eval\b/              => :used_class_eval,
     /\bmodule_eval\b/             => :used_module_eval,
     /\binstance_eval\b/           => :used_instance_eval,
-    /define_method/               => :used_define_method,
+    /\bdefine_method\b/           => :used_define_method,
     /\w+\.send.*".*#\{/           => :dynamic_invocation
   }
 
