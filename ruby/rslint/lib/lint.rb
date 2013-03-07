@@ -67,7 +67,7 @@ class Lint
   end
 
   def violation?(line, number = 1)
-    line = stripped_of_strings(line)
+    line = strip_strings(line)
     abstract_violation?(Violations, line, number)
   end
 
@@ -94,7 +94,7 @@ class Lint
   end
   private :abstract_violation?
 
-  def stripped_of_strings(line)
+  def strip_strings(line)
     line.gsub(/".*"/, '""').gsub(/'.*'/, "''")
   end
 

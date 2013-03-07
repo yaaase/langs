@@ -237,11 +237,11 @@ end
 
 context "string stripping" do
   it "removes strings so it doesn't break on them" do
-    l.stripped_of_strings("def foo(\"bar\")").should == "def foo(\"\")"
+    l.strip_strings("def foo(\"bar\")").should == "def foo(\"\")"
   end
 
   it "does the same with single-quoted strings" do
-    l.stripped_of_strings("def foo('bar')").should == "def foo('')"
+    l.strip_strings("def foo('bar')").should == "def foo('')"
   end
 end
 
