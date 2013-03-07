@@ -105,5 +105,4 @@ class Lint
       super(method_name, *args, &block)
     end
   end
-
 end
