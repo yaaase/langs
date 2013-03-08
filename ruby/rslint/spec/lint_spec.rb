@@ -78,6 +78,28 @@ describe Lint do
       end
     end
 
+    context "operator spacing" do
+      it "spaces around + are good" do
+        l.violation?("2+2").should be_true
+      end
+
+      it "on both sides" do
+        l.violation?("2 +2").should be_true
+      end
+
+      it "but += is ok" do
+        l.violation?("x += 2").should be_false
+      end
+
+      it "same with -" do
+        l.violation?("2-2").should be_true
+      end
+
+      it "-= is fine" do
+        l.violation?("x -= 3").should be_false
+      end
+    end
+
     context "soft tabs" do
       it "don't use actual tabs" do
         l.violation?("\t").should be_true

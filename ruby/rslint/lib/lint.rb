@@ -16,7 +16,10 @@ class Lint
     /\[\s|\s\]/                   => :bracket_spacing,
     /[^\s][{}]|{[^\s]/            => :brace_spacing,
     /,[^ \n]/                     => :comma_spacing,
-    /\t/                          => :no_soft_tabs
+    /\t/                          => :no_soft_tabs,
+    /[^\s]\+/                     => :no_operator_spaces,
+    /\+[^\s=]/                    => :no_operator_spaces,
+    /[^\s]-/                      => :no_operator_spaces
   }
 
   ExceptionViolations = {
@@ -55,7 +58,8 @@ class Lint
     :bracket_spacing              => "Space after [ or before ].",
     :brace_spacing                => "No space around { or before }.",
     :comma_spacing                => "No space after a comma.",
-    :no_soft_tabs                 => "Used tab characters; please use soft tabs."
+    :no_soft_tabs                 => "Used tab characters; please use soft tabs.",
+    :no_operator_spaces           => "Please use spaces around operators."
   }
 
   def initialize
