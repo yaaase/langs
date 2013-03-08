@@ -3,17 +3,21 @@ require_relative './lint'
 class FileParser
   attr_reader :lines
 
+  UniqueConstant = ";;;;;"
+
   def initialize(file_path, lint)
     @lines = []
     @lint = lint
-
-    file = File.open(file_path, 'r')
-    file.readlines.each_with_index do |line, number|
-      @lines << [line, number + 1]
-    end
+    @file_string = File.read(file_path)
   end
 
   def violations?(meta = false)
+    remove_multiline_strings!
+
+    @file_string.each_with_index do |line, number|
+      @lines << [line, number + 1]
+    end
+
     @lines.each do |array|
       line, number = array
       @lint.line_too_long_violation?(line, number)
@@ -28,6 +32,13 @@ class FileParser
     else
       false
     end
+  end
+
+  def remove_multiline_strings!
+    @file_string = @file_string.gsub(/\n/, UniqueConstant)
+    @file_string = @lint.sub_multiline_strings(@file_string)
+    @file_string = @file_string.gsub(/#{UniqueConstant}/, "#{UniqueConstant}\n")
+    @file_string = @file_string.split(/#{UniqueConstant}/)
   end
 
   def display_errors

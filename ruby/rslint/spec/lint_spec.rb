@@ -172,6 +172,16 @@ describe Lint do
     end
   end
 
+  context "multiline strings" do
+    it "ignores multiline strings" do
+      l.sub_multiline_strings("sql = <<-SQL for and or SQL").should == "sql = \"\""
+    end
+
+    it "ignores the other kind too" do
+      l.sub_multiline_strings('"""foo bar baz"""').should == '""'
+    end
+  end
+
   context "comments" do
     it "ignores comments" do
       l.violation?("# a comment").should be_false
