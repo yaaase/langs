@@ -98,7 +98,7 @@ class Lint
   end
   private :abstract_violation?
 
-  def sub_multiline_strings(str)
+  def strip_multiline_strings(str)
     str.gsub!(/""".*"""/, '""')
     start = /<<-?[A-Z]+/
     finish = (str[start] || "")[/[A-Z]+/]

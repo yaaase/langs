@@ -196,11 +196,11 @@ describe Lint do
 
   context "multiline strings" do
     it "ignores multiline strings" do
-      l.sub_multiline_strings("sql = <<-SQL for and or SQL").should == "sql = \"\""
+      l.strip_multiline_strings("sql = <<-SQL for and or SQL").should == "sql = \"\""
     end
 
     it "ignores the other kind too" do
-      l.sub_multiline_strings('"""foo bar baz"""').should == '""'
+      l.strip_multiline_strings('"""foo bar baz"""').should == '""'
     end
   end
 

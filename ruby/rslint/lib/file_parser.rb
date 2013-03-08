@@ -36,7 +36,7 @@ class FileParser
 
   def remove_multiline_strings!
     @file_string = @file_string.gsub(/\n/, UniqueConstant)
-    @file_string = @lint.sub_multiline_strings(@file_string)
+    @file_string = @lint.strip_multiline_strings(@file_string)
     @file_string = @file_string.gsub(/#{UniqueConstant}/, "#{UniqueConstant}\n")
     @file_string = @file_string.split(/#{UniqueConstant}/)
   end
