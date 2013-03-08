@@ -27,7 +27,7 @@ class FileParser
     end
 
     if @lint.errors.any?
-      display_errors
+      display_errors if ARGV.include?("check")
       true
     else
       false
