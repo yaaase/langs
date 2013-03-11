@@ -102,7 +102,7 @@ class Lint
     str.gsub!(/""".*"""/, '""')
     start = /<<-?[A-Z]+/
     finish = (str[start] || "")[/[A-Z]+/]
-    regexp = /#{start}.*#{finish}/
+    regexp = /#{start}.*\b#{finish}\b/
     str = str.gsub(/#{str[regexp]}/,'""') if str[regexp]
     str
   end
