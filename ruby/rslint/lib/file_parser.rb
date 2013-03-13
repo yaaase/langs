@@ -12,15 +12,9 @@ class FileParser
   end
 
   def violations?(meta = false)
-    @file_string.split(/\n/).each_with_index do |line, number|
-      @lint.line_too_long_violation?(line, number)
-    end
-
+    pre_multiline_string_removal_length_check!
     remove_multiline_strings!
-
-    @file_string.each_with_index do |line, number|
-      @lines << [line, number + 1]
-    end
+    assign_lines_with_numbers!
 
     @lines.each do |array|
       line, number = array
@@ -34,6 +28,18 @@ class FileParser
       true
     else
       false
+    end
+  end
+
+  def assign_lines_with_numbers!
+    @file_string.each_with_index do |line, number|
+      @lines << [line, number + 1]
+    end
+  end
+
+  def pre_multiline_string_removal_length_check!
+    @file_string.split(/\n/).each_with_index do |line, number|
+      @lint.line_too_long_violation?(line, number)
     end
   end
 
