@@ -12,6 +12,10 @@ class FileParser
   end
 
   def violations?(meta = false)
+    @file_string.split(/\n/).each_with_index do |line, number|
+      @lint.line_too_long_violation?(line, number)
+    end
+
     remove_multiline_strings!
 
     @file_string.each_with_index do |line, number|
@@ -20,7 +24,6 @@ class FileParser
 
     @lines.each do |array|
       line, number = array
-      @lint.line_too_long_violation?(line, number)
       @lint.violation?(line, number)
       @lint.exception_violation?(line, number)
       @lint.meta_violation?(line, number) if meta
