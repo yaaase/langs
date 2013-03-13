@@ -98,13 +98,14 @@ class Lint
   end
   private :abstract_violation?
 
-  def strip_multiline_strings(str)
-    str.gsub!(/""".*"""/, '""')
-    start = /<<-?[A-Z]+/
-    finish = (str[start] || "")[/[A-Z]+/]
-    regexp = /#{start}.*\b#{finish}\b/
-    str = str.gsub(/#{str[regexp]}/,'""') if str[regexp]
-    str
+  def strip_multiline_strings(string)
+    string.tap do |str|
+      str.gsub!(/""".*"""/, '""')
+      start = /<<-?[A-Z]+/
+      finish = (str[start] || "")[/[A-Z]+/]
+      regexp = /#{start}.*\b#{finish}\b/
+      str.gsub!(/#{str[regexp]}/,'""') if str[regexp]
+    end
   end
 
   def strip_strings(line)
