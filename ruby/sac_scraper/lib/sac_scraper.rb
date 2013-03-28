@@ -55,9 +55,8 @@ class SteepAndCheapScraper
       line =~ /<title>/
     end.first.chomp
 
-    title_line.gsub(/.*<title>/, '').
-               gsub(/<\/title>/, '').
-               gsub(/Steep and Cheap: /, '')
+    title_line.gsub(/.*<title>(.*Steep and Cheap: )?/, '').
+               gsub(/<\/title>/, '')
   end
 
   def exclusion?(string)
