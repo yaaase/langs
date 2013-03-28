@@ -82,5 +82,9 @@ class SteepAndCheapScraper
 end
 
 if ARGV[0] == "start"
-  SteepAndCheapScraper.new.go
+  begin
+    SteepAndCheapScraper.new.go
+  rescue
+    retry
+  end
 end
