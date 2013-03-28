@@ -30,17 +30,17 @@ class SteepAndCheapScraper
     /headlamp/
   ]
 
-  def go!
+  def go
     loop do
-      scrape!
+      scrape
       sleep(5 * 60)
     end
   end
 
-  def scrape!
+  def scrape
     title = "#{scrape_title} http://www.steepandcheap.com/"
     if match?(title) && title != @previous_title && !exclusion?(title)
-      mail!(title)
+      mail(title)
     end
     @previous_title = title
   end
@@ -74,7 +74,7 @@ class SteepAndCheapScraper
     return false
   end
 
-  def mail!(subject)
+  def mail(subject)
     Net::SMTP.start('localhost') do |smtp|
       smtp.send_message(subject, ENV['MY_EMAIL'], ENV['MY_CELL'])
     end
@@ -82,5 +82,5 @@ class SteepAndCheapScraper
 end
 
 if ARGV[0] == "start"
-  SteepAndCheapScraper.new.go!
+  SteepAndCheapScraper.new.go
 end
