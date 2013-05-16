@@ -1,9 +1,11 @@
 require 'main'
+require_relative './file_parser'
 
 Main {
 
   argument('filename') {
     description "The filename to be parsed."
+    cast :string
   }
 
   option('meta') {
@@ -12,7 +14,9 @@ Main {
   }
 
   def run
-    nil
+    filename = params['filename'].values.first
+    meta = params['meta'].values.first ? true : false
+    FileParser.new(filename, Lint.new, true).violations?(meta)
   end
 
 }

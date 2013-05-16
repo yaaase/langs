@@ -5,9 +5,10 @@ class FileParser
 
   UniqueConstant = ";;;;;"
 
-  def initialize(file_path, lint)
+  def initialize(file_path, lint, display = false)
     @lines = []
     @lint = lint
+    @display = display
     @file_string = File.read(file_path)
   end
 
@@ -24,9 +25,10 @@ class FileParser
     end
 
     if @lint.errors.any?
-      display_errors if ARGV.include?("check")
+      display_errors if @display
       true
     else
+      display_no_error_message if @display
       false
     end
   end
@@ -50,6 +52,10 @@ class FileParser
     @file_string = @file_string.split(/#{UniqueConstant}/)
   end
 
+  def display_no_error_message
+    puts "Your program is free of errors."
+  end
+
   def display_errors
     puts "You have the following errors:"
     @lint.errors.each do |hash|
@@ -58,9 +64,4 @@ class FileParser
       puts "Line #{line_number}: #{@lint.send(error)}"
     end
   end
-end
-
-if ARGV[0] == 'check' && ARGV[-1] =~ /\.rb/
-  meta = ARGV.include?("-m")
-  FileParser.new(ARGV[-1], Lint.new).violations?(meta)
 end
