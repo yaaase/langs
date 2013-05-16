@@ -1,5 +1,7 @@
+#!/usr/bin/env ruby
+
 require 'main'
-require_relative './file_parser'
+require_relative 'lib/file_parser'
 
 Main {
 
