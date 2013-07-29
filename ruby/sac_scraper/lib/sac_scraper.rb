@@ -48,7 +48,7 @@ class SteepAndCheapScraper
   end
 
   def scrape_title
-    site = Net::HTTP.get("www.steepandcheap.com", "/")
+    site = Net::HTTP.get("www.steepandcheap.com", "/steepcheap/sac")
     parse_title(site)
   end
 
