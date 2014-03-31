@@ -6,15 +6,14 @@ require 'rss'
 URL = "http://some-rss-feed.com/rss_feed"
 EMAIL = "your@email.com"
 SLEEP_PERIOD = 60 * 60 * 24 # 1 day
+REGEX = /I match the description/i
 
 loop do
 
   response = Net::HTTP.get_response(URI.parse(URL))
   rss = RSS::Parser.parse(response.body)
 
-  results = rss.items.select do |item|
-    item.description =~ /regex to match description/i
-  end
+  results = rss.items.select { |i| i.description =~ REGEX }
 
   entries = results.map { |r| [r.title, r.description, r.date, r.link] }
 
