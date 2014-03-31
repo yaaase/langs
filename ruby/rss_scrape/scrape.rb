@@ -5,6 +5,7 @@ require 'rss'
 
 URL = "http://some-rss-feed.com/rss_feed"
 EMAIL = "your@email.com"
+SLEEP_PERIOD = 60 * 60 * 24 # 1 day
 
 loop do
 
@@ -17,7 +18,7 @@ loop do
 
   entries = results.map { |r| [r.title, r.description, r.date, r.link] }
 
-  email_body = "Here's your list of things: "
+  email_body = "Matching Contents:\n"
   entries.each do |entry|
     email_body << "\n#{entry.join("\n")}\n"
   end
@@ -26,6 +27,6 @@ loop do
     smtp.send_message(email_body, EMAIL, EMAIL)
   end
 
-  sleep(60 * 60 * 24)
+  sleep(SLEEP_PERIOD)
 
 end
