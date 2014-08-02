@@ -48,7 +48,7 @@ class SteepAndCheapScraper
   end
 
   def scrape_title
-    site = Net::HTTP.get("www.steepandcheap.com", "/steepcheap/sac")
+    site = Net::HTTP.get('www.steepandcheap.com', '/steepcheap/sac')
     parse_title(site)
   end
 
@@ -83,7 +83,7 @@ class SteepAndCheapScraper
   end
 end
 
-if ARGV[0] == "start"
+if ARGV[0] == 'start'
   begin
     SteepAndCheapScraper.new.go
   rescue
