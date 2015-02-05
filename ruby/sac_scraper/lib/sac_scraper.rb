@@ -5,9 +5,6 @@ class SteepAndCheapScraper
   DesiredMatches = [
     /\bskis?\b/,
     /\bgoggles?\b/,
-    /\bblack diamond\b/,
-    /\bmountain hardwear\b/,
-    /\barc'teryx\b/,
     /\bsnow pants?\b/,
     /\bgopro\b/,
     /\bbeacon\b/,
@@ -18,10 +15,6 @@ class SteepAndCheapScraper
     /\bice tool\b/,
     /\bice axe\b/,
     /\bcrampon\s?\b/,
-    /\btelemark\b/,
-    /\bhammerhead\b/,
-    /\btele.*bindings?\b/,
-    /\btele.*boot\s?\b/,
     /\bskins\b/
   ]
 
